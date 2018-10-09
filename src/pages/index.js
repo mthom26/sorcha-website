@@ -4,11 +4,12 @@ import '../reboot.css';
 import '../index.css';
 
 import Layout from '../components/Layout';
+import Landing from '../components/Landing';
 
 const Index = () => {
   return (
     <Layout>
-      <h1>Hello World</h1>
+      <Landing />
     </Layout>
   );
 };
