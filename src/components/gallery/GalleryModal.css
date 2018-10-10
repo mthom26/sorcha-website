@@ -1,0 +1,26 @@
+.galleryModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.9);
+  border: 2px solid orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.galleryModalClose {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0.8rem 1.6rem;
+  background: red;
+}
+
+.modalImageContainer {
+  border: 1px solid lightgreen;
+  height: 80%;
+  width: 80%;
+}
