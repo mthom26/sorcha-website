@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   height: 100vh;
-  background: url('../images/mainbg2.jpg');
+  background: url('../../images/mainbg2.jpg');
   background-size: cover;
   background-position: 70%;
 }
