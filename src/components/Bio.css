@@ -1,0 +1,25 @@
+.bio {
+  display: flex;
+  padding: 5rem 0;
+}
+
+.bioImage {
+  border: 1px solid red;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-basis: 50%;
+}
+
+.bioImageContainer {
+  width: 100%;
+  max-width: 800px;
+}
+
+.bioContent {
+  border: 1px solid cyan;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  flex-basis: 50%;
+}

@@ -1,6 +1,12 @@
 .landing {
+  display: flex;
+  align-items: center;
   height: 100vh;
-  background: url('../images/mainbg.jpg');
+  background: url('../images/mainbg2.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: 70%;
+}
+
+.landingContent {
+  margin-left: 5rem;
 }

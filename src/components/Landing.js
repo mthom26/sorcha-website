@@ -5,7 +5,10 @@ import './Landing.css';
 const Landing = () => {
   return (
     <div className="landing">
-      <h1>Landing</h1>
+      <div className="landingContent">
+        <h1>Sorcha Thompson</h1>
+        <p>Blah Blah Blah...</p>
+      </div>
     </div>
   );
 };
