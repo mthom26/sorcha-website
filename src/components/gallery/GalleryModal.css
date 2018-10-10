@@ -19,8 +19,40 @@
   background: red;
 }
 
+.galleryButton {
+  position: absolute;
+  top: 50vh;
+  padding: 0.8rem 1.6rem;
+}
+
+.galleryButton.next {
+  border: 1px solid yellow;
+  right: 20px;
+}
+.galleryButton.prev {
+  border: 1px solid orangered;
+  left: 20px;
+}
+
 .modalImageContainer {
   border: 1px solid lightgreen;
   height: 80%;
   width: 80%;
+}
+
+/* ------------- */
+/* Media Queries */
+/* ------------- */
+@media (max-width: 1080px) {
+  
+}
+
+@media (max-width: 650px) {
+  .modalImageContainer {
+    height: auto;
+  }
+
+  .galleryButton {
+    top: 80vh;
+  }
 }

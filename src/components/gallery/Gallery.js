@@ -10,11 +10,32 @@ class Gallery extends React.Component {
 
     this.state = {
       modalOpen: false,
-      modalIndex: 0
+      modalIndex: 0,
+      maxIndex: 3
     };
 
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
+    this.incrementModalIndex = this.incrementModalIndex.bind(this);
+    this.decrementModalIndex = this.decrementModalIndex.bind(this);
+  }
+
+  incrementModalIndex() {
+    const { modalIndex, maxIndex } = this.state;
+    if(modalIndex < maxIndex) {
+      this.setState({ modalIndex: modalIndex + 1 });
+    } else {
+      this.setState({ modalIndex: 0 });
+    }
+  }
+
+  decrementModalIndex() {
+    const { modalIndex, maxIndex } = this.state;
+    if(modalIndex > 0) {
+      this.setState({ modalIndex: modalIndex - 1 });
+    } else {
+      this.setState({ modalIndex: maxIndex });
+    }
   }
 
   openModal(index) {
@@ -45,6 +66,8 @@ class Gallery extends React.Component {
         {modalOpen && (
           <GalleryModal
             closeModal={this.closeModal}
+            incrementModal={this.incrementModalIndex}
+            decrementModal={this.decrementModalIndex}
             image={Object.values(images)[modalIndex]}
           />
         )}
