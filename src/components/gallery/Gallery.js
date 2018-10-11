@@ -1,4 +1,5 @@
 import React from 'react';
+import { CSSTransition } from 'react-transition-group';
 
 import './Gallery.css';
 import GalleryImage from './GalleryImage';
@@ -63,14 +64,20 @@ class Gallery extends React.Component {
             />
           ))}
         </div>
-        {modalOpen && (
+        <CSSTransition
+          in={modalOpen}
+          unmountOnExit
+          classNames="modalFade"
+          timeout={1000}
+        >
           <GalleryModal
             closeModal={this.closeModal}
             incrementModal={this.incrementModalIndex}
             decrementModal={this.decrementModalIndex}
             image={Object.values(images)[modalIndex]}
+            id={modalIndex}
           />
-        )}
+        </CSSTransition>
       </div>
     );
   }

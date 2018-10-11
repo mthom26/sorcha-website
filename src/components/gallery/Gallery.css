@@ -10,3 +10,21 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.modalFade-enter {
+  opacity: 0;
+}
+
+.modalFade-enter.modalFade-enter-active {
+opacity: 1;
+transition: opacity 1000ms linear;
+}
+
+.modalFade-exit {
+  opacity: 1;
+}
+
+.modalFade-exit.modalFade-exit-active {
+  opacity: 0;
+  transition: opacity 1000ms linear;
+}

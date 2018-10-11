@@ -40,6 +40,28 @@
   width: 80%;
 }
 
+.modalImage {
+  position: relative;
+}
+
+.modalImage-enter {
+  opacity: 0;
+}
+
+.modalImage-enter.modalImage-enter-active {
+opacity: 1;
+transition: opacity 1000ms linear;
+}
+
+.modalImage-exit {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+
+.modalImage-exit.modalImage-exit-active {
+  opacity: 0;
+  transition: opacity 1000ms linear;
+}
 /* ------------- */
 /* Media Queries */
 /* ------------- */
@@ -49,7 +71,7 @@
 
 @media (max-width: 650px) {
   .modalImageContainer {
-    height: auto;
+    height: 40%;
   }
 
   .galleryButton {
