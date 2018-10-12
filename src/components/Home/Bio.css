@@ -23,3 +23,16 @@
   padding: 2rem;
   flex-basis: 50%;
 }
+
+/* ------------- */
+/* Media Queries */
+/* ------------- */
+@media (max-width: 1080px) {
+  
+}
+
+@media (max-width: 650px) {
+  .bio {
+    flex-direction: column;
+  }
+}
