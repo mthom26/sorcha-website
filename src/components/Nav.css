@@ -2,6 +2,7 @@
   position: fixed;
   width: 100vw;
   background: rgba(0,0,0,0.7);
+  z-index: 20;
 }
 
 .navContainer {

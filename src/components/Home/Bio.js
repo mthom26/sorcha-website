@@ -33,6 +33,7 @@ const Bio = () => {
         <div className="bioContent">
           <div>
             <h2>About</h2>
+            <hr />
             <p>Blah blah blah....</p>
           </div>
         </div>

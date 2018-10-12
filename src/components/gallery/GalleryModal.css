@@ -4,7 +4,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0,0,0,0.9);
+  background: rgba(0,0,0,0.95);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +51,7 @@
 
 .modalImageContainer {
   height: 80%;
-  width: 80%;
+  width: 50%;
 }
 
 .modalImage {
@@ -80,7 +80,9 @@ transition: opacity 300ms linear;
 /* Media Queries */
 /* ------------- */
 @media (max-width: 1080px) {
-  
+  .modalImageContainer {
+    width: 80%;
+  }
 }
 
 @media (max-width: 650px) {

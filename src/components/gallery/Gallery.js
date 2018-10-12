@@ -53,7 +53,9 @@ class Gallery extends React.Component {
 
     return (
       <div className="gallery">
-        <h1>Gallery</h1>
+        <div className="galleryHeader">
+          <h1>Gallery</h1>
+        </div>
         <div className="galleryImages">
           {Object.values(images).map((image, index) => (
             <GalleryImage
