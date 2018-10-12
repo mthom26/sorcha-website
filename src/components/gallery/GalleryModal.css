@@ -5,37 +5,50 @@
   width: 100vw;
   height: 100vh;
   background: rgba(0,0,0,0.9);
-  border: 2px solid orange;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .galleryModalClose {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  padding: 0.8rem 1.6rem;
-  background: red;
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  top: 15px;
+  right: 15px;
+  background:  rgba(255,255,255,0.2);
+  border-radius: 100%;
+  cursor: pointer;
+  transition: transform 250ms linear;
+  z-index: 21;
+  transform: scale(0.8);
+  opacity: 0.7;
+}
+.galleryModalClose:hover {
+  opacity: 0.9;
 }
 
 .galleryButton {
+  cursor: pointer;
   position: absolute;
   top: 50vh;
-  padding: 0.8rem 1.6rem;
+  border-radius: 100%;
+  background: rgba(255,255,255,0.2);
+  opacity: 0.7;
+}
+
+.galleryButton:hover {
+  opacity: 0.9;
 }
 
 .galleryButton.next {
-  border: 1px solid yellow;
   right: 20px;
 }
 .galleryButton.prev {
-  border: 1px solid orangered;
   left: 20px;
 }
 
 .modalImageContainer {
-  border: 1px solid lightgreen;
   height: 80%;
   width: 80%;
 }
@@ -50,7 +63,7 @@
 
 .modalImage-enter.modalImage-enter-active {
 opacity: 1;
-transition: opacity 1000ms linear;
+transition: opacity 300ms linear;
 }
 
 .modalImage-exit {
@@ -60,7 +73,7 @@ transition: opacity 1000ms linear;
 
 .modalImage-exit.modalImage-exit-active {
   opacity: 0;
-  transition: opacity 1000ms linear;
+  transition: opacity 300ms linear;
 }
 /* ------------- */
 /* Media Queries */

@@ -6,7 +6,6 @@
 }
 
 .galleryImages {
-  border: 1px solid cyan;
   display: flex;
   flex-wrap: wrap;
 }
@@ -16,8 +15,8 @@
 }
 
 .modalFade-enter.modalFade-enter-active {
-opacity: 1;
-transition: opacity 1000ms linear;
+  opacity: 1;
+  transition: opacity 300ms linear;
 }
 
 .modalFade-exit {
@@ -26,5 +25,5 @@ transition: opacity 1000ms linear;
 
 .modalFade-exit.modalFade-exit-active {
   opacity: 0;
-  transition: opacity 1000ms linear;
+  transition: opacity 300ms linear;
 }

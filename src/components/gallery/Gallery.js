@@ -68,7 +68,7 @@ class Gallery extends React.Component {
           in={modalOpen}
           unmountOnExit
           classNames="modalFade"
-          timeout={1000}
+          timeout={300}
         >
           <GalleryModal
             closeModal={this.closeModal}
