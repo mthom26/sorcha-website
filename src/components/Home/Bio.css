@@ -4,7 +4,7 @@
 }
 
 .bioImage {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -17,7 +17,7 @@
 }
 
 .bioContent {
-  border: 1px solid cyan;
+  /* border: 1px solid cyan; */
   display: flex;
   align-items: center;
   padding: 2rem;

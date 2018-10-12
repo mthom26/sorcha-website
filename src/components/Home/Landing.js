@@ -7,6 +7,7 @@ const Landing = () => {
     <div className="landing">
       <div className="landingContent">
         <h1>Sorcha Thompson</h1>
+        <hr />
         <p>Blah Blah Blah...</p>
       </div>
     </div>

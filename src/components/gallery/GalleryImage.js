@@ -10,6 +10,7 @@ const GalleryImage = ({ image, openModal, index }) => {
         style={{height: '100%'}}
         fluid={image.childImageSharp.fluid}
       />
+      <div className="galleryImageOverlay" />
     </div>
   );
 };
