@@ -10,3 +10,16 @@
 .landingContent {
   margin-left: 5rem;
 }
+
+/* ------------- */
+/* Media Queries */
+/* ------------- */
+@media (max-width: 1080px) {
+  
+}
+
+@media (max-width: 650px) {
+  .landingContent {
+    margin: 0 1rem;
+  }
+}
