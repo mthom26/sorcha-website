@@ -3,9 +3,23 @@
   --dark1: #282524;
   --dark2: #35373c;
   --light1: #f2f2f2;
+  --gold: #d3ad45;
 }
 
 body {
   background: var(--dark1);
   color: var(--light1);
+}
+
+a {
+  color: var(--gold);
+  text-decoration: none;
+  background-color: transparent;
+  opacity: 0.8;
+}
+
+a:hover {
+  color: var(--gold);
+  text-decoration: none;
+  opacity: 1;
 }
