@@ -2,14 +2,48 @@ import React from 'react';
 
 import GigEntry from './GigEntry';
 
+const splitData = (data) => {
+  // Split data from contentful into blocks by month and year
+  // Each entry date should be of the form DD-MM-YYYY for this to work properly  
+  const dataObj = data.allContentfulGig.edges.reduce((acc, cur) => {
+    // objDate should look like YYYY-MM
+    const objDate = cur.node.date.slice(3, 10).split('-').reverse().join('-');
+
+    acc[objDate]
+      ? acc[objDate].entries.push(cur.node)
+      : acc[objDate] = { entries: [cur.node] };
+
+    return acc;
+  }, {});
+  
+  /* 
+    returned object should look like
+    {
+      YYYY-MM: {
+        entries: [ ...entries ]
+      },
+      ...other_date_blocks
+    }
+  */
+  return dataObj;
+};
+
 const Gigs = ({ data }) => {
-  console.log(data);
+  const dataFormatted = splitData(data);
+  console.log(dataFormatted);
   return (
     <div>
       <h1>Gigs</h1>
-      {data.allContentfulGig.edges.map((gig, index) => (
-        <GigEntry key={index} date={gig.node.date} address={gig.node.address} />
-      ))}
+      {Object.entries(dataFormatted).map((entry, index) => {
+        return (
+          <div key={index}>
+            <h2>{entry[0]}</h2>
+            {entry[1].entries.map(gig => (
+              <GigEntry key={gig.date} date={gig.date} address={gig.address} />
+            ))}
+          </div>
+        )
+      })}
     </div>
   );
 };

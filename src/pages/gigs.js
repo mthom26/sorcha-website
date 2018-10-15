@@ -18,15 +18,15 @@ const GigsPage = ({ data }) => {
 export default GigsPage;
 
 export const query = graphql`
-  {
-    allContentfulGig {
-      edges {
-        node {
-          date(formatString: "DD-MM-YYYY, h:mma")
-          address
-        }
+{
+  allContentfulGig (sort: { fields: [date], order: DESC}) {
+    edges {
+      node {
+        date(formatString: "DD-MM-YYYY, h:mma")
+        address
       }
     }
   }
+}
 `;
 
