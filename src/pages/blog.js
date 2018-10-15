@@ -25,6 +25,11 @@ export const query = graphql`
         title
         slug
         date(formatString: "DD-MM-YYYY")
+        body {
+          childMarkdownRemark {
+            excerpt(pruneLength: 150)
+          }
+        }
       }
     }
   }
