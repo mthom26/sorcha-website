@@ -1,8 +1,5 @@
 import React from 'react';
 
-import '../reboot.css';
-import '../index.css';
-
 import Layout from '../components/Layout';
 import Landing from '../components/Home/Landing';
 import Bio from '../components/Home/Bio';
