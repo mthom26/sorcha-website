@@ -1,11 +1,14 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+import './Blog.css';
+import PageHeader from '../PageHeader';
+
 const Blog = ({ data }) => {
   //console.log(data);
   return (
     <div>
-      <h1>Blog Posts</h1>
+      <PageHeader title="Blog" classes="blogHeader" />
       {data.allContentfulBlogPost.edges.map(({ node }, index) => {
         const { title, date, body, slug } = node;
         

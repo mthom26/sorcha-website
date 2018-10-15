@@ -6,10 +6,7 @@ import Gigs from '../components/gigs/Gigs';
 
 const GigsPage = ({ data }) => {
   return (
-    <Layout>
-      <div style={{height: '300px', border: '1px solid red'}}>
-        <h1>Gigs Header</h1>
-      </div>
+    <Layout>      
       <Gigs data={data} />
     </Layout>
   );

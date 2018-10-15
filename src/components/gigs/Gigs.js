@@ -1,6 +1,8 @@
 import React from 'react';
 
+import './Gigs.css';
 import GigEntry from './GigEntry';
+import PageHeader from '../PageHeader';
 
 const splitData = (data) => {
   // Split data from contentful into blocks by month and year
@@ -33,7 +35,7 @@ const Gigs = ({ data }) => {
   console.log(dataFormatted);
   return (
     <div>
-      <h1>Gigs</h1>
+      <PageHeader title="Gigs" classes="gigsHeader" />
       {Object.entries(dataFormatted).map((entry, index) => {
         return (
           <div key={index}>

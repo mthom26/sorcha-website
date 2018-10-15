@@ -4,6 +4,7 @@ import { CSSTransition } from 'react-transition-group';
 import './Gallery.css';
 import GalleryImage from './GalleryImage';
 import GalleryModal from './GalleryModal';
+import PageHeader from '../PageHeader';
 
 class Gallery extends React.Component {
   constructor(props) {
@@ -53,9 +54,7 @@ class Gallery extends React.Component {
 
     return (
       <div className="gallery">
-        <div className="galleryHeader">
-          <h1>Gallery</h1>
-        </div>
+        <PageHeader title="Gallery" classes="galleryHeader" />
         <div className="galleryImages">
           {Object.values(images).map((image, index) => (
             <GalleryImage
