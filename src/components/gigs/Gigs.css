@@ -1,3 +1,24 @@
 .gigsHeader {
   background: url('../../images/gigsheaderbg.jpg');
 }
+
+.gigBlock {
+  /* border: 1px solid orange; */
+  margin: 0 auto 4rem auto;
+  max-width: var(--max-width);
+}
+
+.gigBlock h2 {
+  text-align: center;
+}
+
+.gigBlock hr {
+  width: 50%;
+}
+
+.gigEntries {
+  /* border: 1px solid lawngreen; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

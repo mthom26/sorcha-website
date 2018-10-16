@@ -1,0 +1,15 @@
+.gigEntry {
+  /* border: 1px solid cyan; */
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
+}
+
+.gigEntry span {
+  padding: 0 0.5rem;
+  transition: color 200ms linear;
+}
+
+.gigEntry:hover span {
+  color: var(--gold);
+}

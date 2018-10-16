@@ -6,6 +6,8 @@
   --dark2: #35373c;
   --light1: #f2f2f2;
   --gold: #d3ad45;
+
+  --max-width: 1080px;
 }
 
 body {

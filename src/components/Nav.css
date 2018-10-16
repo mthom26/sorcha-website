@@ -8,7 +8,7 @@
 .navContainer {
   display: flex;
   justify-content: space-between;
-  max-width: 1080px;
+  max-width: var(--max-width);
   margin: 0 auto;
 }
 
