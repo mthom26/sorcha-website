@@ -1,0 +1,39 @@
+.blogPost {
+  /* border: 1px solid orange; */
+}
+
+.blogPostHeader {
+  width: 100%;
+  max-height: 60vh;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.blogPostImage {
+  
+}
+
+.blogPostContent {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  /* border: 1px solid plum; */
+}
+
+.blogPostContent hr {
+  width: 15rem;
+  margin-left: 0;
+}
+/* ------------- */
+/* Media Queries */
+/* ------------- */
+@media (max-width: 1080px) {
+  .blogPostContent {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .blogPostContent hr {
+    width: 100%;
+  }
+}
