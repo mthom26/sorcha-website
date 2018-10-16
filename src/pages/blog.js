@@ -27,6 +27,11 @@ export const query = graphql`
             excerpt(pruneLength: 150)
           }
         }
+        coverImage {
+          fluid(maxWidth: 800) {
+            ...GatsbyContentfulFluid
+          }
+        }
       }
     }
   }

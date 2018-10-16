@@ -1,3 +1,51 @@
 .blogHeader {
   background: url('../../images/blogheaderbg.jpg');
 }
+
+.blogPagePost {
+  max-width: var(--max-width);
+  margin: 0 auto 3rem auto;
+  padding: 0 1rem;
+  display: flex;
+}
+
+.blogPagePostContent {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blogPagePostContent hr {
+  margin-left: 0;
+  width: 35%;
+}
+
+.blogPagePostImage {
+  min-width: 350px;
+  min-height: 280px;
+}
+
+/* ------------- */
+/* Media Queries */
+/* ------------- */
+@media (max-width: 1080px) {
+  
+}
+
+@media (max-width: 650px) {
+  .blogPagePost {
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+
+  .blogPagePostContent {
+    margin-left: 0;
+  }
+
+  .blogPagePostImage {
+    min-width: 250px;
+    min-height: 200px;
+    margin-bottom: 1rem;
+  }
+}
