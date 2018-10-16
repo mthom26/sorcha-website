@@ -26,12 +26,18 @@ exports.createPages = ({ graphql, actions }) => {
           reject(result.errors);
         }
 
-        result.data.allContentfulBlogPost.edges.forEach(blogPost => {
+        const posts = result.data.allContentfulBlogPost.edges;
+
+        posts.forEach((blogPost, index) => {
           createPage({
             path: `/blog/${blogPost.node.slug}`,
             component: blogPostTemplate,
             context: {
-              slug: blogPost.node.slug
+              slug: blogPost.node.slug,
+              prev: index === 0 ? posts[posts.length -1].node : posts[index-1].node,
+              prevSlug: index === 0 ? posts[posts.length -1].node.slug : posts[index-1].node.slug,
+              next: index === (posts.length - 1) ? posts[0].node : posts[index+1].node,
+              nextSlug: index === (posts.length - 1) ? posts[0].node.slug : posts[index+1].node.slug
             }
           });
         });

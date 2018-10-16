@@ -23,6 +23,34 @@
   width: 15rem;
   margin-left: 0;
 }
+
+.relatedBlogPosts {
+  display: flex;
+  max-height: 400px;
+}
+
+/* .relatedBlogPostsPrev {
+  border: 1px solid red;
+}
+
+.relatedBlogPostsNext {
+  border: 1px solid cyan;
+} */
+
+.relatedBlogPostsPrev, .relatedBlogPostsNext {
+  position: relative;
+  flex-basis: 50%;
+}
+
+.relatedBlogPostsContent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.6);
+}
+
 /* ------------- */
 /* Media Queries */
 /* ------------- */
