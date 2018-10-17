@@ -1,6 +1,7 @@
 .landingBlogPost {
   /* border: 1px solid red; */
   position: relative;
+  overflow: hidden;
 }
 
 .landingBlogPostContent {
@@ -12,12 +13,33 @@
   top: 0;
   z-index: 10;
   padding: 0 1rem;
+  color: var(--light1);
+  opacity: 0.8;
+  transition: all 250ms linear;
+}
+
+.landingBlogPostContent h3 {
+  transition: all 250ms linear;
+}
+
+.landingBlogPostContent span {
+  opacity: 0.5;
+}
+
+.landingBlogPostContent:hover {
+  opacity: 1;
+}
+
+.landingBlogPostContent:hover h3 {
+  color: var(--gold);
 }
 
 .landingBlogPostImg {
   width: 100%;
   height: 250px;
-  /* border: 1px solid lawngreen; */
+  filter: blur(5px);
+  transform-origin: center;
+  transform: scale(1.08);
 }
 
 .landingBlogPostContentCon {

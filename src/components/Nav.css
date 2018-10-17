@@ -25,6 +25,14 @@
   padding: 0.8rem 1.5rem;
   display: flex;
   align-items: center;
+  opacity: 0.8;
+  transition: opacity 250ms linear;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+.navLink:hover {
+  opacity: 1;
 }
 
 /* ------------- */

@@ -37,9 +37,25 @@
   border: 1px solid cyan;
 } */
 
-.relatedBlogPostsPrev, .relatedBlogPostsNext {
+.relatedBlogPost {
   position: relative;
   flex-basis: 50%;
+  opacity: 0.8;
+  transition: opacity 250ms linear;
+  color: var(--light1);
+}
+
+.relatedBlogPost h3 {
+  transition: color 250ms linear;
+}
+
+.relatedBlogPost:hover {
+  opacity: 1;
+}
+
+.relatedBlogPost span {
+  color: var(--light1);
+  opacity: 0.5;
 }
 
 .relatedBlogPostsContent {

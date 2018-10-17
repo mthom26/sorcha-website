@@ -16,6 +16,16 @@
   justify-content: center;
 }
 
+.blogPagePostContent a {
+  opacity: 0.8;
+  transition: opacity 250ms linear;
+  width: fit-content;
+}
+
+.blogPagePostContent a:hover {
+  opacity: 1;
+}
+
 .blogPagePostContent hr {
   margin-left: 0;
   width: 35%;

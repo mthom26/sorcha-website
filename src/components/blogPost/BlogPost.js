@@ -28,23 +28,25 @@ const BlogPost = ({ data, pathContext }) => {
       </div>
 
       <div className="relatedBlogPosts">
-        <Link className="relatedBlogPostsPrev" to={`/blog/${prev.slug}`}>
+        <Link className="relatedBlogPost" to={`/blog/${prev.slug}`}>
           <Img
             style={{ height: '100%' }}
             fluid={prev.coverImage.fluid}
           />
           <div className="relatedBlogPostsContent">
             <h3>{prev.title}</h3>
+            <span>{prev.date}</span>
           </div>
         </Link>
       
-        <Link className="relatedBlogPostsNext" to={`/blog/${next.slug}`}>
+        <Link className="relatedBlogPost" to={`/blog/${next.slug}`}>
           <Img
             style={{ height: '100%' }}
             fluid={next.coverImage.fluid}
           />
           <div className="relatedBlogPostsContent">
             <h3>{next.title}</h3>
+            <span>{next.date}</span>
           </div>
         </Link>
       </div>

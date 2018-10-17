@@ -9,7 +9,6 @@ const LandingBlogPosts = ({ blogPosts }) => {
   console.log(blogPosts);
   return (
     <div>
-      <h2>BlogPosts</h2>
       {blogPosts.map(({ node }, index) => (
         <Link to={`/blog/${node.slug}`} key={index}>
           <div className="landingBlogPost">
@@ -17,7 +16,7 @@ const LandingBlogPosts = ({ blogPosts }) => {
               className="landingBlogPostImg"
               fluid={node.coverImage.fluid}
             />
-            <div className="landingBlogPostContent removeAnchorStyling">
+            <div className="landingBlogPostContent">
               <div className="landingBlogPostContentCon">
                 <h3>{node.title}</h3>
                 <span>{node.date}</span>
