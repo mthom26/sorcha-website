@@ -40,3 +40,17 @@ hr {
 h1 {
   font-size: 48px;
 }
+
+/* Remove anchor styling (useful for styling Gatsby Link components) */
+.removeAnchorStyling {
+  color: var(--light1);
+  opacity: 1;
+  text-shadow: none;
+  transition: none;
+}
+
+.removeAnchorStyling:hover {
+  color: var(--light1);
+  opacity: 1;
+  text-shadow: none;
+}

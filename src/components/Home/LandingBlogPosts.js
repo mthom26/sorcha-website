@@ -12,19 +12,19 @@ const LandingBlogPosts = ({ blogPosts }) => {
       <h2>BlogPosts</h2>
       {blogPosts.map(({ node }, index) => (
         <Link to={`/blog/${node.slug}`} key={index}>
-        <div className="landingBlogPost">
-          <Img
-            className="landingBlogPostImg"
-            fluid={node.coverImage.fluid}
-          />
-          <div className="landingBlogPostContent">
-            <div className="landingBlogPostContentCon">
-              <h3>{node.title}</h3>
-              <span>{node.date}</span>
-              <p>{node.body.childMarkdownRemark.excerpt}</p>
+          <div className="landingBlogPost">
+            <Img
+              className="landingBlogPostImg"
+              fluid={node.coverImage.fluid}
+            />
+            <div className="landingBlogPostContent removeAnchorStyling">
+              <div className="landingBlogPostContentCon">
+                <h3>{node.title}</h3>
+                <span>{node.date}</span>
+                <p>{node.body.childMarkdownRemark.excerpt}</p>
+              </div>
             </div>
           </div>
-        </div>
         </Link>
       ))}
     </div>
