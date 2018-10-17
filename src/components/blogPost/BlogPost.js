@@ -3,7 +3,6 @@ import Img from 'gatsby-image';
 import { Link } from 'gatsby';
 
 import './BlogPost.css';
-import { runInNewContext } from 'vm';
 
 const BlogPost = ({ data, pathContext }) => {
   console.log(data);
