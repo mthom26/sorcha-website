@@ -1,0 +1,11 @@
+.contactHeader {
+  background: url('../../images/contactheaderbg.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.contact {
+  border: 1px solid lightcoral;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}

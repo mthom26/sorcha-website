@@ -37,7 +37,7 @@ class Nav extends React.Component {
               <Link className="navLink" to="/gigs">Gigs</Link>
               <Link className="navLink" to="/gallery">Gallery</Link>
               <Link className="navLink" to="/blog">Blog</Link>
-              <Link className="navLink" to="#">Contact</Link>
+              <Link className="navLink" to="/contact">Contact</Link>
             </div>
           </div>
         </nav>
