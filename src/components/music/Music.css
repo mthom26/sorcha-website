@@ -1,0 +1,55 @@
+.musicHeader {
+  background: url('../../images/musicheaderbg.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.music {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.musicBand {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.musicBand:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.musicImage {
+  flex-basis: 50%;
+}
+
+.musicContent {
+  flex-basis: 50%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.musicContent hr {
+  width: 10rem;
+}
+
+/* ------------- */
+/* Media Queries */
+/* ------------- */
+@media (max-width: 1080px) {
+  
+}
+
+@media (max-width: 650px) {
+  .musicBand {
+    flex-direction: column;
+  }
+
+  .musicBand:nth-child(2n) {
+    flex-direction: column;
+  }
+}
