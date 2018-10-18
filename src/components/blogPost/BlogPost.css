@@ -24,6 +24,19 @@
   margin-left: 0;
 }
 
+.blogPostContent img {
+  max-width: 100%;
+}
+
+.blogPostContent a {
+  opacity: 0.8;
+  transition: opacity 250ms linear;
+}
+
+.blogPostContent a:hover {
+  opacity: 1;
+}
+
 .relatedBlogPosts {
   display: flex;
   max-height: 400px;
