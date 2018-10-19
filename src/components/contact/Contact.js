@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 import './Contact.css';
 import PageHeader from '../PageHeader';
+import spinner from '../../images/spinner.svg';
 
 const initial_formData = {
   name: '',
@@ -30,36 +31,32 @@ export class Contact extends Component {
       }
     });
   }
-  /*
-  onSubmit = () => {
-    this.setState({ loading: true });
-    return fetch(process.env.GATSBY_AWS_CONTACTFORM, {
-      method: "POST",
-      body: JSON.stringify(this.state.formData)
-    })
-      .then(response => {
-        console.log(response);
-        this.setState({
-          ...INITIAL_STATE, 
-          formSuccess: true,
-          loading: false
-        });
-      })
-      .catch(err => {
-        console.log(err);
-        this.setState({
-          ...INITIAL_STATE,
-          formFailure: true,
-          loading: false
-        });
-      });
-  }
-  */
 
   onSubmit = (event) => {
     event.preventDefault();
-    console.log(this.state.formData);
-    this.setState({ loading: true });
+    //console.log(this.state.formData);
+    this.setState({ loading: true, formFailure: false, formSuccess: false });
+
+    return fetch(process.env.GATSBY_AWS_ENDPOINT, {
+      method: 'POST',
+      body: JSON.stringify(this.state.formData)
+    })
+    .then(response => {
+      console.log(response);
+      this.setState({
+        formData: initial_formData, 
+        formSuccess: true,
+        loading: false
+      });
+    })
+    .catch(err => {
+      console.log(err);
+      this.setState({
+        formData: initial_formData, 
+        formFailure: true,
+        loading: false
+      });
+    });
   }
 
   render() {
@@ -109,12 +106,14 @@ export class Contact extends Component {
               className="contactFormButton"
             >
               <span style={{ margin: '0 1rem' }}>Send Message</span>
-              {loading && <span className="loader">Loader</span>}
+              {loading && (
+                <img src={spinner} className="loader" width="22px" height="22px" />
+              )}
             </button>
 
             <div className="formStatus">
-              {formSuccess && <span>Success</span>}
-              {formFailure && <span>Form Not Sent!</span>}
+              {formSuccess && <span className="formSuccess">Success!</span>}
+              {formFailure && <span className="formFailure">Form Not Sent!</span>}
             </div>
           </form>
         </div>
