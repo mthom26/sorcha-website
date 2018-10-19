@@ -13,8 +13,8 @@ const Footer = () => {
         </div>
         <div className="footerContent">
           <div className="footerIcons">
-            <a href="#"><img src={facebook} width="24px" /></a>
-            <a href="#"><img src={youtube} width="24px" /></a>
+            <a href="#"><img src={facebook} width="24px" alt="" /></a>
+            <a href="#"><img src={youtube} width="24px" alt="" /></a>
           </div>
           <div className="footerText">2018 Sorcha Thompson</div>
         </div>

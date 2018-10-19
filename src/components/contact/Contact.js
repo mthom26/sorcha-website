@@ -107,7 +107,13 @@ export class Contact extends Component {
             >
               <span style={{ margin: '0 1rem' }}>Send Message</span>
               {loading && (
-                <img src={spinner} className="loader" width="22px" height="22px" />
+                <img
+                  src={spinner}
+                  className="loader"
+                  width="22px"
+                  height="22px"
+                  alt=""
+                />
               )}
             </button>
 

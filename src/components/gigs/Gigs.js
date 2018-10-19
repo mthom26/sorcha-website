@@ -87,5 +87,7 @@ const formatBlockDate = (dateString) => {
       return `November ${arr[0]}`;
     case '12':
       return `December ${arr[0]}`;
-  };
+    default:
+      return `Error formatting date ${arr}`;
+  }
 };

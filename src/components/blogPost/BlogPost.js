@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 
 import './BlogPost.css';
 
-const BlogPost = ({ data, pathContext }) => {
+const BlogPost = ({ data, pageContext }) => {
   console.log(data);
   const { title, date, body, coverImage } = data.main;
   const { next, prev } = data;

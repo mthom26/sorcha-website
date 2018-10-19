@@ -5,13 +5,13 @@ import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
 import BlogPost from '../components/blogPost/BlogPost';
 
-const BlogPostPage = ({ data, pathContext }) => {
+const BlogPostPage = ({ data, pageContext }) => {
   return (
     <Layout>
       <Helmet>
         <title>{data.main.title} | Sorcha Thompson</title>
       </Helmet>
-      <BlogPost data={data} pathContext={pathContext} />
+      <BlogPost data={data} pageContext={pageContext} />
     </Layout>
   );
 };
