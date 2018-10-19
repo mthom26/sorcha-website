@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import { Helmet } from 'react-helmet';
 
 import Layout from '../components/Layout';
 import BlogPost from '../components/blogPost/BlogPost';
@@ -7,6 +8,9 @@ import BlogPost from '../components/blogPost/BlogPost';
 const BlogPostPage = ({ data, pathContext }) => {
   return (
     <Layout>
+      <Helmet>
+        <title>{data.main.title} | Sorcha Thompson</title>
+      </Helmet>
       <BlogPost data={data} pathContext={pathContext} />
     </Layout>
   );

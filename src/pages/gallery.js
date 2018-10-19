@@ -1,4 +1,6 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import { Helmet } from 'react-helmet';
 
 import Layout from '../components/Layout';
 import Gallery from '../components/gallery/Gallery';
@@ -6,6 +8,9 @@ import Gallery from '../components/gallery/Gallery';
 const GalleryPage = ({ data }) => {
   return (
     <Layout>
+      <Helmet>
+        <title>Gallery | Sorcha Thompson</title>
+      </Helmet> 
       <Gallery images={data} />
     </Layout>
   );

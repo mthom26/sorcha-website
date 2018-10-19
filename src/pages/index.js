@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import { Helmet } from 'react-helmet';
 
 import Layout from '../components/Layout';
 import Landing from '../components/Home/Landing';
@@ -10,6 +11,9 @@ import LandingBlogPosts from '../components/Home/LandingBlogPosts';
 const Index = ({ data }) => {
   return (
     <Layout>
+      <Helmet>
+        <title>Sorcha Thompson</title>
+      </Helmet>
       <Landing />
       <Bio />
       <UpcomingGigs />
