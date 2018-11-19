@@ -7,10 +7,12 @@ import PageHeader from '../PageHeader';
 
 const Blog = ({ data }) => {
   console.log(data);
+  const blogPosts = data.englishBlogPosts;
+  
   return (
     <div>
       <PageHeader title="Blog" classes="blogHeader" />
-      {data.allContentfulBlogPost.edges.map(({ node }, index) => {
+      {blogPosts.edges.map(({ node }, index) => {
         const { title, date, body, slug, coverImage } = node;
         
         return (

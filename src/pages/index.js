@@ -17,7 +17,7 @@ const Index = ({ data }) => {
       <Landing />
       <Bio />
       <UpcomingGigs />
-      <LandingBlogPosts blogPosts={data.newBlogPosts.edges} />
+      <LandingBlogPosts blogPosts={data.newEnglishBlogPosts.edges} />
     </Layout>
   );
 };
@@ -26,7 +26,27 @@ export default Index;
 
 export const query = graphql`
 query IndexQuery {
-  newBlogPosts: allContentfulBlogPost (sort: { fields: [date], order: DESC}, limit: 3) {
+  newEnglishBlogPosts: allContentfulBlogPost (filter: { node_locale: { eq: "en-US"}}, sort: { fields: [date], order: DESC}, limit: 3) {
+    edges {
+      node {
+        date(formatString: "DD-MM-YYYY")
+        title
+        slug
+        body {
+          childMarkdownRemark {
+             excerpt(pruneLength: 150)
+         	}
+        }
+        coverImage {
+          fluid(maxWidth: 1920) {
+            ...GatsbyContentfulFluid
+          }
+        }
+      }
+    }
+  }
+
+  newGermanBlogPosts: allContentfulBlogPost (filter: { node_locale: { eq: "de"}}, sort: { fields: [date], order: DESC}, limit: 3) {
     edges {
       node {
         date(formatString: "DD-MM-YYYY")
