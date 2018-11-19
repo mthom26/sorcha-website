@@ -12,7 +12,16 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
         {
-          allContentfulBlogPost (sort: { fields: [date], order: DESC}) {
+          englishBlogPosts: allContentfulBlogPost (filter: { node_locale: { eq: "en-US"}}, sort: { fields: [date], order: DESC}) {
+            edges {
+              node {
+                title
+                slug
+                date(formatString: "DD-MM-YYYY")
+              }
+            }
+          }
+          germanBlogPosts: allContentfulBlogPost (filter: { node_locale: { eq: "de"}}, sort: { fields: [date], order: DESC}) {
             edges {
               node {
                 title
@@ -28,21 +37,38 @@ exports.createPages = ({ graphql, actions }) => {
           reject(result.errors);
         }
 
-        const posts = result.data.allContentfulBlogPost.edges;
+        const englishPosts = result.data.englishBlogPosts.edges;
+        const germanPosts = result.data.germanBlogPosts.edges;
 
-        posts.forEach((blogPost, index) => {
+        englishPosts.forEach((blogPost, index) => {
           createPage({
             path: `/blog/${blogPost.node.slug}`,
             component: blogPostTemplate,
             context: {
               slug: blogPost.node.slug,
-              prev: index === 0 ? posts[posts.length -1].node : posts[index-1].node,
-              prevSlug: index === 0 ? posts[posts.length -1].node.slug : posts[index-1].node.slug,
-              next: index === (posts.length - 1) ? posts[0].node : posts[index+1].node,
-              nextSlug: index === (posts.length - 1) ? posts[0].node.slug : posts[index+1].node.slug
+              prev: index === 0 ? englishPosts[englishPosts.length -1].node : englishPosts[index-1].node,
+              prevSlug: index === 0 ? englishPosts[englishPosts.length -1].node.slug : englishPosts[index-1].node.slug,
+              next: index === (englishPosts.length - 1) ? englishPosts[0].node : englishPosts[index+1].node,
+              nextSlug: index === (englishPosts.length - 1) ? englishPosts[0].node.slug : englishPosts[index+1].node.slug,
+              locale: 'en'
             }
           });
         });
+        germanPosts.forEach((blogPost, index) => {
+          createPage({
+            path: `/de/blog/${blogPost.node.slug}`,
+            component: blogPostTemplate,
+            context: {
+              slug: blogPost.node.slug,
+              prev: index === 0 ? germanPosts[germanPosts.length -1].node : germanPosts[index-1].node,
+              prevSlug: index === 0 ? germanPosts[germanPosts.length -1].node.slug : germanPosts[index-1].node.slug,
+              next: index === (germanPosts.length - 1) ? germanPosts[0].node : germanPosts[index+1].node,
+              nextSlug: index === (germanPosts.length - 1) ? germanPosts[0].node.slug : germanPosts[index+1].node.slug,
+              locale: 'de'
+            }
+          });
+        });
+
         return;
       })
     )
@@ -62,6 +88,7 @@ exports.onCreatePage = ({ page, actions }) => {
         ...page,
         path: localePath,
         context: {
+          ...page.context,
           locale: lang
         }
       });

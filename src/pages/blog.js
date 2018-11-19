@@ -16,7 +16,7 @@ const BlogPage = ({ data, pageContext }) => {
       <Helmet>
         <title>Blog | Sorcha Thompson</title>
       </Helmet> 
-      <Blog data={data} />
+      <Blog data={data} locale={locale} />
     </Layout>
   );
 };

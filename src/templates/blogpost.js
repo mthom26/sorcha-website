@@ -9,11 +9,12 @@ import BlogPost from '../components/blogPost/BlogPost';
 
 // !! Need to make sure the pageContext contains locales and other data !!
 const BlogPostPage = ({ data, pageContext }) => {
+  
   const { locale } = pageContext;
   const { localeData } = locales[locale];
 
   return (
-    <Layout>
+    <Layout localeData={localeData} locale={locale}>
       <Helmet>
         <title>{data.main.title} | Sorcha Thompson</title>
       </Helmet>

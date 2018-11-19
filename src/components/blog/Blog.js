@@ -5,9 +5,9 @@ import Img from 'gatsby-image';
 import './Blog.css';
 import PageHeader from '../PageHeader';
 
-const Blog = ({ data }) => {
+const Blog = ({ data, locale }) => {
   console.log(data);
-  const blogPosts = data.englishBlogPosts;
+  const blogPosts = locale === 'en' ? data.englishBlogPosts : data.germanBlogPosts;
   
   return (
     <div>
