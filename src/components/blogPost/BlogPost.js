@@ -3,16 +3,7 @@ import Img from 'gatsby-image';
 import { Link } from 'gatsby';
 
 import './BlogPost.css';
-
-const getPathPrefix = (locale) => {
-  // If locale is 'en' the path should not include it
-  // e.g. '/en/blog' should just return '/blog'
-  if(locale === 'en') {
-    return ''; //empty string
-  }
-  // otherwise return the locale string
-  return locale;
-};
+import { getPathPrefix } from '../../utils';
 
 const BlogPost = ({ data, pageContext }) => {
   const { title, date, body, coverImage } = data.main;

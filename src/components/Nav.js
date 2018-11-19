@@ -2,8 +2,8 @@ import React, { Fragment } from 'react';
 import { Link } from 'gatsby';
 
 import './Nav.css';
-
 import NavButton from './NavButton';
+import { getPathPrefix } from '../utils';
 
 class Nav extends React.Component {
   constructor(props) {
@@ -14,21 +14,10 @@ class Nav extends React.Component {
     };
 
     this.toggleNav = this.toggleNav.bind(this);
-    this.getPathPrefix = this.getPathPrefix.bind(this);
   }
 
   toggleNav() {
     this.setState({ navOpen: !this.state.navOpen });
-  }
-
-  getPathPrefix(locale) {
-    // If locale is 'en' the path should not include it
-    // e.g. '/en/blog' should just return '/blog'
-    if(locale === 'en') {
-      return ''; //empty string
-    }
-    // otherwise return the locale string
-    return locale;
   }
 
   render() {
@@ -36,7 +25,7 @@ class Nav extends React.Component {
     const navClasses = `nav ${navOpen ? '' : 'navHidden'}`;
 
     const { localeData } = this.props;
-    const locale = this.getPathPrefix(this.props.locale);
+    const locale = getPathPrefix(this.props.locale);
     
     return (
       <Fragment>
