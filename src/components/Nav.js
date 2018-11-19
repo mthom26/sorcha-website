@@ -14,11 +14,21 @@ class Nav extends React.Component {
     };
 
     this.toggleNav = this.toggleNav.bind(this);
+    this.transformLocalePath = this.transformLocalePath.bind(this);
   }
 
   toggleNav() {
     this.setState({ navOpen: !this.state.navOpen });
   }
+
+  transformLocalePath(locale, pathname) {
+    if(locale === 'en') {
+      return `de/${pathname}`
+    } else {
+      // slice '/de' off the pathname
+      return pathname.slice(3);
+    }
+  };
 
   render() {
     const { navOpen } = this.state;
@@ -26,6 +36,13 @@ class Nav extends React.Component {
 
     const { localeData } = this.props;
     const locale = getPathPrefix(this.props.locale);
+    let switchLocalePath;
+    if(global.window) {
+      switchLocalePath = this.transformLocalePath(
+        this.props.locale,
+        window.location.pathname
+      );
+    }
     
     return (
       <Fragment>
@@ -50,6 +67,9 @@ class Nav extends React.Component {
               </Link>
               <Link className="navLink" to={`/${locale}/contact`}>
                 {localeData.nav.contact}
+              </Link>
+              <Link className="navLink" to={switchLocalePath}>
+                {this.props.locale === 'en' ? 'German' : 'English'}
               </Link>
             </div>
           </div>
