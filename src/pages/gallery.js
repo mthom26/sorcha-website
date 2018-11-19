@@ -2,12 +2,17 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 
+import locales from '../data/locales';
+
 import Layout from '../components/Layout';
 import Gallery from '../components/gallery/Gallery';
 
-const GalleryPage = ({ data }) => {
+const GalleryPage = ({ data, pageContext }) => {
+  const { locale } = pageContext;
+  const { localeData } = locales[locale];
+  
   return (
-    <Layout>
+    <Layout localeData={localeData} locale={locale}>
       <Helmet>
         <title>Gallery | Sorcha Thompson</title>
       </Helmet> 

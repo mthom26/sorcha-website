@@ -2,10 +2,16 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 
+import locales from '../data/locales';
+
 import Layout from '../components/Layout';
 import BlogPost from '../components/blogPost/BlogPost';
 
+// !! Need to make sure the pageContext contains locales and other data !!
 const BlogPostPage = ({ data, pageContext }) => {
+  const { locale } = pageContext;
+  const { localeData } = locales[locale];
+
   return (
     <Layout>
       <Helmet>
