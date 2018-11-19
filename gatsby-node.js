@@ -1,5 +1,7 @@
 const path = require('path');
 
+const locales = require('./src/data/locales');
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
@@ -44,5 +46,26 @@ exports.createPages = ({ graphql, actions }) => {
         return;
       })
     )
+  })
+};
+
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage, deletePage } = actions;
+
+  return new Promise(resolve => {
+    deletePage(page);
+
+    Object.keys(locales).map(lang => {
+      const localePath = locales[lang].default ? page.path : locales[lang].path + page.path;
+      
+      return createPage({
+        ...page,
+        path: localePath,
+        context: {
+          locale: lang
+        }
+      });
+    });
+    resolve();
   })
 };

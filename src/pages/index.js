@@ -2,15 +2,22 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 
+import locales from '../data/locales';
+
 import Layout from '../components/Layout';
 import Landing from '../components/Home/Landing';
 import Bio from '../components/Home/Bio';
 import UpcomingGigs from '../components/Home/UpcomingGigs';
 import LandingBlogPosts from '../components/Home/LandingBlogPosts';
 
-const Index = ({ data }) => {
+const Index = ({ data, pageContext }) => {
+  // console.log('INDEX PAGE', pageContext);
+  const { locale } = pageContext;
+  const { localeData } = locales[locale];
+  // console.log('INDEX PAGE', localeData);
+
   return (
-    <Layout>
+    <Layout localeData={localeData} locale={locale}>
       <Helmet>
         <title>Sorcha Thompson</title>
       </Helmet>

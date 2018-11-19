@@ -6,10 +6,10 @@ import '../index.css';
 import Nav from './Nav';
 import Footer from './Footer';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, locale, localeData }) => {
   return (
     <Fragment>
-      <Nav />
+      <Nav localeData={localeData} locale={locale} />
       {children}
       <Footer />
     </Fragment>
