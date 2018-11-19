@@ -4,11 +4,21 @@ import { Link } from 'gatsby';
 
 import './BlogPost.css';
 
+const getPathPrefix = (locale) => {
+  // If locale is 'en' the path should not include it
+  // e.g. '/en/blog' should just return '/blog'
+  if(locale === 'en') {
+    return ''; //empty string
+  }
+  // otherwise return the locale string
+  return locale;
+};
+
 const BlogPost = ({ data, pageContext }) => {
-  console.log(data);
   const { title, date, body, coverImage } = data.main;
   const { next, prev } = data;
-  
+  const locale = getPathPrefix(pageContext.locale);
+
   return (
     <div className="blogPost">
       <div className="blogPostHeader">
@@ -28,7 +38,7 @@ const BlogPost = ({ data, pageContext }) => {
       </div>
 
       <div className="relatedBlogPosts">
-        <Link className="relatedBlogPost" to={`/blog/${prev.slug}`}>
+        <Link className="relatedBlogPost" to={`/${locale}/blog/${prev.slug}`}>
           <Img
             style={{ height: '100%' }}
             fluid={prev.coverImage.fluid}
@@ -39,7 +49,7 @@ const BlogPost = ({ data, pageContext }) => {
           </div>
         </Link>
       
-        <Link className="relatedBlogPost" to={`/blog/${next.slug}`}>
+        <Link className="relatedBlogPost" to={`/${locale}/blog/${next.slug}`}>
           <Img
             style={{ height: '100%' }}
             fluid={next.coverImage.fluid}
