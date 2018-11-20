@@ -14,7 +14,7 @@ const Index = ({ data, pageContext }) => {
   // console.log('INDEX PAGE', pageContext);
   const { locale } = pageContext;
   const { localeData } = locales[locale];
-  // console.log('INDEX PAGE', localeData);
+  const blogPosts = locale === 'en' ? data.newEnglishBlogPosts : data.newGermanBlogPosts;
 
   return (
     <Layout localeData={localeData} locale={locale}>
@@ -24,7 +24,7 @@ const Index = ({ data, pageContext }) => {
       <Landing />
       <Bio />
       <UpcomingGigs />
-      <LandingBlogPosts blogPosts={data.newEnglishBlogPosts.edges} />
+      <LandingBlogPosts blogPosts={blogPosts.edges} locale={locale} />
     </Layout>
   );
 };
