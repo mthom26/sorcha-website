@@ -15,6 +15,7 @@ const Index = ({ data, pageContext }) => {
   const { locale } = pageContext;
   const { localeData } = locales[locale];
   const blogPosts = locale === 'en' ? data.newEnglishBlogPosts : data.newGermanBlogPosts;
+  const gigs = data.upcomingGigs.edges;
 
   return (
     <Layout localeData={localeData} locale={locale}>
@@ -23,7 +24,7 @@ const Index = ({ data, pageContext }) => {
       </Helmet>
       <Landing localeData={localeData.landing} />
       <Bio localeData={localeData.bio}/>
-      <UpcomingGigs />
+      <UpcomingGigs gigs={gigs} />
       <LandingBlogPosts blogPosts={blogPosts.edges} locale={locale} />
     </Layout>
   );
@@ -69,6 +70,15 @@ query IndexQuery {
             ...GatsbyContentfulFluid
           }
         }
+      }
+    }
+  }
+
+  upcomingGigs: allContentfulGig (filter: { node_locale: { eq: "en-US"}}, sort: { fields: [date], order: DESC}) {
+    edges {
+      node {
+        date
+        address
       }
     }
   }
