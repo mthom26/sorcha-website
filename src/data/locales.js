@@ -30,7 +30,21 @@ module.exports = {
         }
       },
       gigs: {
-        headerText: 'Gigs'
+        headerText: 'Gigs',
+        months: {
+          jan: 'January',
+          feb: 'February',
+          mar: 'March',
+          apr: 'April',
+          may: 'May',
+          jun: 'June',
+          jul: 'July',
+          aug: 'August',
+          sep: 'September',
+          oct: 'October',
+          nov: 'November',
+          dec: 'December'
+        }
       },
       gallery: {
         headerText: 'Gallery'
@@ -77,7 +91,21 @@ module.exports = {
         }
       },
       gigs: {
-        headerText: 'g_Gigs'
+        headerText: 'g_Gigs',
+        months: {
+          jan: 'g_January',
+          feb: 'g_February',
+          mar: 'g_March',
+          apr: 'g_April',
+          may: 'g_May',
+          jun: 'g_June',
+          jul: 'g_July',
+          aug: 'g_August',
+          sep: 'g_September',
+          oct: 'g_October',
+          nov: 'g_November',
+          dec: 'g_December'
+        }
       },
       gallery: {
         headerText: 'g_Gallery'

@@ -13,7 +13,7 @@ const Gigs = ({ data, localeData }) => {
       {Object.entries(dataFormatted).map((entry, index) => {
         return (
           <div className="gigBlock" key={index}>
-            <h2>{formatBlockDate(entry[0])}</h2>
+            <h2>{formatBlockDate(entry[0], localeData.months)}</h2>
             <hr />
             <div className="gigEntries">
               {entry[1].entries.map(gig => (
@@ -59,34 +59,35 @@ const splitData = (data) => {
   return dataObj;
 };
 
-const formatBlockDate = (dateString) => {
-  // Should receive a string of the form YYYY-MM
+const formatBlockDate = (dateString, months) => {
+  // Should receive a string of the form YYYY-MM,
+  // and an object containing localised month names
   const arr = dateString.split('-');
   switch(arr[1]) {
     case '01':
-      return `January ${arr[0]}`;
+      return `${months.jan} ${arr[0]}`;
     case '02':
-      return `February ${arr[0]}`;
+      return `${months.feb} ${arr[0]}`;
     case '03':
-      return `March ${arr[0]}`;
+      return `${months.mar} ${arr[0]}`;
     case '04':
-      return `April ${arr[0]}`;
+      return `${months.apr} ${arr[0]}`;
     case '05':
-      return `May ${arr[0]}`;
+      return `${months.may} ${arr[0]}`;
     case '06':
-      return `June ${arr[0]}`;
+      return `${months.jun} ${arr[0]}`;
     case '07':
-      return `July ${arr[0]}`;
+      return `${months.jul} ${arr[0]}`;
     case '08':
-      return `August ${arr[0]}`;
+      return `${months.aug} ${arr[0]}`;
     case '09':
-      return `September ${arr[0]}`;
+      return `${months.sep} ${arr[0]}`;
     case '10':
-      return `October ${arr[0]}`;
+      return `${months.oct} ${arr[0]}`;
     case '11':
-      return `November ${arr[0]}`;
+      return `${months.nov} ${arr[0]}`;
     case '12':
-      return `December ${arr[0]}`;
+      return `${months.dec} ${arr[0]}`;
     default:
       return `Error formatting date ${arr}`;
   }
