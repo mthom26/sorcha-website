@@ -24,7 +24,7 @@ const Index = ({ data, pageContext }) => {
       </Helmet>
       <Landing localeData={localeData.landing} />
       <Bio localeData={localeData.bio}/>
-      <UpcomingGigs gigs={gigs} />
+      <UpcomingGigs localeData={localeData.upcomingGigs} gigs={gigs} />
       <LandingBlogPosts blogPosts={blogPosts.edges} locale={locale} />
     </Layout>
   );

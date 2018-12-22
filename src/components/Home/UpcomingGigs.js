@@ -4,10 +4,10 @@ import { formatDate } from '../../utils';
 
 import './UpcomingGigs.css';
 
-const UpcomingGigs = ({ gigs }) => {
+const UpcomingGigs = ({ gigs, localeData }) => {
   return (
     <div className="upcomingGigs">
-      <h2>Upcoming Gigs</h2>
+      <h2>{localeData.title}</h2>
       <hr />
       {gigs.map(({ node }) => {
         const gigDate = Date.parse(node.date);
@@ -15,7 +15,7 @@ const UpcomingGigs = ({ gigs }) => {
         if(gigDate > now) {
           const formattedDate = formatDate(node.date);
           return (
-            <div className="gigEntry">
+            <div key={node.date} className="gigEntry">
               <span>{formattedDate}</span> <span>{node.address}</span>
             </div>
           );

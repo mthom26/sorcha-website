@@ -46,6 +46,9 @@ module.exports = {
           dec: 'December'
         }
       },
+      upcomingGigs: {
+        title: 'Upcoming Gigs'
+      },
       gallery: {
         headerText: 'Gallery'
       },
@@ -106,6 +109,9 @@ module.exports = {
           nov: 'g_November',
           dec: 'g_December'
         }
+      },
+      upcomingGigs: {
+        title: 'g_Upcoming Gigs'
       },
       gallery: {
         headerText: 'g_Gallery'
