@@ -4,9 +4,8 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import './Bio.css';
 
-const Bio = () => {
+const Bio = ({ localeData }) => {
   return (
-
       <div className="bio">
         <div className="bioImage">
           <StaticQuery
@@ -32,9 +31,9 @@ const Bio = () => {
         </div>
         <div className="bioContent">
           <div>
-            <h2>About</h2>
+            <h2>{localeData.title}</h2>
             <hr />
-            <p>Blah blah blah....</p>
+            <p>{localeData.content}</p>
           </div>
         </div>
       </div>

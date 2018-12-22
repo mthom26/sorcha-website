@@ -4,12 +4,12 @@ import './Gigs.css';
 import GigEntry from './GigEntry';
 import PageHeader from '../PageHeader';
 
-const Gigs = ({ data }) => {
+const Gigs = ({ data, localeData }) => {
   const dataFormatted = splitData(data);
   //console.log(dataFormatted);
   return (
     <div>
-      <PageHeader title="Gigs" classes="gigsHeader" />
+      <PageHeader title={`${localeData.headerText}`} classes="gigsHeader" />
       {Object.entries(dataFormatted).map((entry, index) => {
         return (
           <div className="gigBlock" key={index}>

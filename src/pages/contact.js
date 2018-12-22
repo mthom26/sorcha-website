@@ -15,7 +15,7 @@ const ContactPage = ({ data, pageContext }) => {
       <Helmet>
         <title>Contact | Sorcha Thompson</title>
       </Helmet> 
-      <Contact />
+      <Contact localeData={localeData.contact} />
     </Layout>
   )
 }

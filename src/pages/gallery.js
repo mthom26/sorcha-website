@@ -16,7 +16,7 @@ const GalleryPage = ({ data, pageContext }) => {
       <Helmet>
         <title>Gallery | Sorcha Thompson</title>
       </Helmet> 
-      <Gallery images={data} />
+      <Gallery localeData={localeData.gallery} images={data} />
     </Layout>
   );
 };

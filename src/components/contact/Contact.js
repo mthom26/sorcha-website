@@ -62,14 +62,15 @@ export class Contact extends Component {
   render() {
     const { name, email, message } = this.state.formData;
     const { formSuccess, formFailure, loading } = this.state;
+    const { localeData } = this.props;
 
     return (
       <div>
-        <PageHeader title="Contact" classes="contactHeader" />
+        <PageHeader title={`${localeData.headerText}`} classes="contactHeader" />
         <div className="contact">
           <form className="contactForm">
             <div className="contactFormInputBlock">
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">{localeData.name}</label>
               <input
                 onChange={this.onUpdateState}
                 value={name}
@@ -80,7 +81,7 @@ export class Contact extends Component {
             </div>
 
             <div className="contactFormInputBlock">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">{localeData.email}</label>
               <input
                 onChange={this.onUpdateState}
                 value={email}
@@ -91,7 +92,7 @@ export class Contact extends Component {
             </div>
 
             <div className="contactFormInputBlock">
-              <label htmlFor="message">Message</label>
+              <label htmlFor="message">{localeData.message}</label>
               <textarea
                 onChange={this.onUpdateState}
                 rows={4}

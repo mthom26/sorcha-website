@@ -4,13 +4,13 @@ import Img from 'gatsby-image';
 import './Music.css';
 import PageHeader from '../PageHeader';
 
-const Music = ({ data }) => {
+const Music = ({ data, localeData }) => {
   console.log(data);
   const { larkinImg, vioLarkinImg } = data;
 
   return (
     <div>
-      <PageHeader title="Music" classes="musicHeader" />
+      <PageHeader title={`${localeData.headerText}`} classes="musicHeader" />
       <div className="music">
         <div className="musicBand">
           <Img
@@ -18,9 +18,9 @@ const Music = ({ data }) => {
             fluid={larkinImg.childImageSharp.fluid}
           />
           <div className="musicContent">
-            <h2>Larkin</h2>
+            <h2>{localeData.larkin.title}</h2>
             <hr />
-            <p>Blah Blah Blah...</p>
+            <p>{localeData.larkin.content}</p>
           </div>
         </div>
 
@@ -30,9 +30,9 @@ const Music = ({ data }) => {
             fluid={vioLarkinImg.childImageSharp.fluid}
           />
           <div className="musicContent">
-            <h2>Vio Larkin</h2>
+            <h2>{localeData.vioLarkin.title}</h2>
             <hr />
-            <p>Blah Blah Blah...</p>
+            <p>{localeData.vioLarkin.content}</p>
           </div>
         </div>
       </div>

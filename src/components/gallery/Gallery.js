@@ -49,12 +49,12 @@ class Gallery extends React.Component {
   }
 
   render() {
-    const { images } = this.props;
+    const { images, localeData } = this.props;
     const { modalOpen, modalIndex } = this.state;
 
     return (
       <div className="gallery">
-        <PageHeader title="Gallery" classes="galleryHeader" />
+        <PageHeader title={`${localeData.headerText}`} classes="galleryHeader" />
         <div className="galleryImages">
           {Object.values(images).map((image, index) => (
             <GalleryImage

@@ -16,7 +16,7 @@ const GigsPage = ({ data, pageContext }) => {
       <Helmet>
         <title>Gigs | Sorcha Thompson</title>
       </Helmet>      
-      <Gigs data={data} />
+      <Gigs localeData={localeData.gigs} data={data} />
     </Layout>
   );
 };

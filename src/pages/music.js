@@ -16,7 +16,7 @@ const MusicPage = ({ data, pageContext }) => {
       <Helmet>
         <title>Music | Sorcha Thompson</title>
       </Helmet>
-      <Music data={data} />
+      <Music localeData={localeData.music} data={data} />
     </Layout>
   )
 }

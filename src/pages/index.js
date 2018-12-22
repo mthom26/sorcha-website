@@ -21,8 +21,8 @@ const Index = ({ data, pageContext }) => {
       <Helmet>
         <title>Sorcha Thompson</title>
       </Helmet>
-      <Landing />
-      <Bio />
+      <Landing localeData={localeData.landing} />
+      <Bio localeData={localeData.bio}/>
       <UpcomingGigs />
       <LandingBlogPosts blogPosts={blogPosts.edges} locale={locale} />
     </Layout>

@@ -6,14 +6,14 @@ import './Blog.css';
 import PageHeader from '../PageHeader';
 import { getPathPrefix } from '../../utils';
 
-const Blog = ({ data, locale }) => {
+const Blog = ({ data, locale, localeData }) => {
   console.log(data);
   const blogPosts = locale === 'en' ? data.englishBlogPosts : data.germanBlogPosts;
   const localePath = getPathPrefix(locale);
 
   return (
     <div>
-      <PageHeader title="Blog" classes="blogHeader" />
+      <PageHeader title={`${localeData.headerText}`} classes="blogHeader" />
       {blogPosts.edges.map(({ node }, index) => {
         const { title, date, body, slug, coverImage } = node;
         
