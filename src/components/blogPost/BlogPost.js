@@ -34,8 +34,9 @@ const BlogPost = ({ data, pageContext }) => {
             style={{ height: '100%' }}
             fluid={prev.coverImage.fluid}
           />
-          <div className="relatedBlogPostsContent">
+          <div className="relatedBlogPostsContent prev">
             <h3>{prev.title}</h3>
+            <hr />
             <span>{prev.date}</span>
           </div>
         </Link>
@@ -45,8 +46,9 @@ const BlogPost = ({ data, pageContext }) => {
             style={{ height: '100%' }}
             fluid={next.coverImage.fluid}
           />
-          <div className="relatedBlogPostsContent">
+          <div className="relatedBlogPostsContent next">
             <h3>{next.title}</h3>
+            <hr />
             <span>{next.date}</span>
           </div>
         </Link>

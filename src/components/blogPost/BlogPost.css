@@ -59,7 +59,14 @@
 }
 
 .relatedBlogPost h3 {
+  font-size: 1.6rem;
   transition: color 250ms linear;
+}
+
+.relatedBlogPost hr {
+ width: 10rem;
+ margin-left: 0;
+ margin-right: 0;
 }
 
 .relatedBlogPost:hover {
@@ -78,6 +85,21 @@
   top: 0;
   left: 0;
   background: rgba(0,0,0,0.6);
+  padding: 2rem;
+}
+
+.relatedBlogPostsContent.prev {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.relatedBlogPostsContent.next {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 /* ------------- */
@@ -92,5 +114,15 @@
 @media (max-width: 650px) {
   .blogPostContent hr {
     width: 100%;
+  }
+
+  .relatedBlogPosts {
+    flex-direction: column;
+    max-height: 100%;
+  }
+
+  .relatedBlogPost {
+    max-height: 200px;
+    overflow: hidden;
   }
 }
