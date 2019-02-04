@@ -19,7 +19,7 @@ module.exports = {
         content: 'Sorcha Thompson is a violinist living in Berlin. Although she grew up learning classical repertoire and playing in orchestras, her interests have since extended to genres as diverse as Irish folk and synth pop. She is active in several bands demonstrating the versatility of the violin as both melodic and rhythm instrument, as synthesiser and fiddle. No matter the musical context, Sorcha combines genre-specific techniques with her own musical ear to create an authentic, individual sound, whether on stage or in the recording studio.'
       },
       music: {
-        headerText: 'Music',
+        headerText: 'Bands',
         larkin: {
           title: 'Larkin',
           content: 'Larkin are one of the longest running Irish folk bands in eastern Germany. The band was formed in Berlin in 1972 by the Scottish singer Jack Mitchell and today appears in various formations with a range of musicians. Brilliant musicianship is combined with poetic and often humorous German translations of Irish and Scottish folksongs.',
@@ -38,7 +38,7 @@ module.exports = {
         movesJohnson: {
           title: 'Moves Johnson',
           content: "Born in Canada, Moves currently lives in Berlin, Germany. He is best known for his resonant and often humorous lyrics, his aggressive performance style and his witty stage banter. A performer to the core, Moves is a musician on both the streets and the stage. Whether it's a crowded subway station, a bustling city street or a dimly lit and smokey bar, Moves finds the music to fit any occasion.",
-          link: 'http://www.larkin-music.de/'
+          link: 'https://www.facebook.com/MovesJohnsonMusic/'
         }
       },
       gigs: {
@@ -82,21 +82,21 @@ module.exports = {
     default: false,
     localeData: {
       nav: {
-        music: 'bands_g',
-        gigs: 'gigs_g',
-        gallery: 'gallery_g',
-        blog: 'blog_g',
-        contact: 'contact_g'
+        music: 'bands',
+        gigs: 'gigs',
+        gallery: 'gallery',
+        blog: 'blog',
+        contact: 'contact'
       },
       landing: {
         content: 'Sorcha Thompson is a violinist living in Berlin. Although she grew up learning classical repertoire and playing in orchestras, her interests have since extended to genres as diverse as Irish folk and synth pop. She is active in several bands demonstrating the versatility of the violin as both melodic and rhythm instrument, as synthesiser and fiddle. No matter the musical context, Sorcha combines genre-specific techniques with her own musical ear to create an authentic, individual sound, whether on stage or in the recording studio.'
       },
       bio: {
-        title: 'g_About',
+        title: 'About',
         content: 'Sorcha Thompson is a violinist living in Berlin. Although she grew up learning classical repertoire and playing in orchestras, her interests have since extended to genres as diverse as Irish folk and synth pop. She is active in several bands demonstrating the versatility of the violin as both melodic and rhythm instrument, as synthesiser and fiddle. No matter the musical context, Sorcha combines genre-specific techniques with her own musical ear to create an authentic, individual sound, whether on stage or in the recording studio.'
       },
       music: {
-        headerText: 'g_Music',
+        headerText: 'Bands',
         larkin: {
           title: 'Larkin',
           content: 'Larkin are one of the longest running Irish folk bands in eastern Germany. The band was formed in Berlin in 1972 by the Scottish singer Jack Mitchell and today appears in various formations with a range of musicians. Brilliant musicianship is combined with poetic and often humorous German translations of Irish and Scottish folksongs.',
@@ -115,41 +115,41 @@ module.exports = {
         movesJohnson: {
           title: 'Moves Johnson',
           content: "Born in Canada, Moves currently lives in Berlin, Germany. He is best known for his resonant and often humorous lyrics, his aggressive performance style and his witty stage banter. A performer to the core, Moves is a musician on both the streets and the stage. Whether it's a crowded subway station, a bustling city street or a dimly lit and smokey bar, Moves finds the music to fit any occasion.",
-          link: 'http://www.larkin-music.de/'
+          link: 'https://www.facebook.com/MovesJohnsonMusic/'
         }
       },
       gigs: {
-        headerText: 'g_Gigs',
+        headerText: 'Gigs',
         months: {
-          jan: 'g_January',
-          feb: 'g_February',
-          mar: 'g_March',
-          apr: 'g_April',
-          may: 'g_May',
-          jun: 'g_June',
-          jul: 'g_July',
-          aug: 'g_August',
-          sep: 'g_September',
-          oct: 'g_October',
-          nov: 'g_November',
-          dec: 'g_December'
+          jan: 'January',
+          feb: 'February',
+          mar: 'March',
+          apr: 'April',
+          may: 'May',
+          jun: 'June',
+          jul: 'July',
+          aug: 'August',
+          sep: 'September',
+          oct: 'October',
+          nov: 'November',
+          dec: 'December'
         }
       },
       upcomingGigs: {
-        title: 'g_Upcoming Gigs'
+        title: 'Upcoming Gigs'
       },
       gallery: {
-        headerText: 'g_Gallery'
+        headerText: 'Gallery'
       },
       blog: {
-        headerText: 'g_Blog'
+        headerText: 'Blog'
       },
       contact: {
-        headerText: 'g_Contact',
+        headerText: 'Contact',
         content: 'If you would like to book a show, schedule a recording session or otherwise make contact, use the form below to send a message.',
-        name: 'g_Name',
-        email: 'g_Email',
-        message: 'g_Message'
+        name: 'Name',
+        email: 'Email',
+        message: 'Message'
       }
     }
   }

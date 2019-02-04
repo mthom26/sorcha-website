@@ -39,7 +39,9 @@
 /* Media Queries */
 /* ------------- */
 @media (max-width: 1080px) {
-  
+  .navLink {
+    padding: 0.8rem 1.0rem;
+  }
 }
 
 @media (max-width: 650px) {

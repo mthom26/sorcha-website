@@ -43,3 +43,16 @@ hr {
 h1 {
   font-size: 48px;
 }
+
+/* ------------- */
+/* Media Queries */
+/* ------------- */
+@media (max-width: 1080px) {
+ 
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 36px;
+  }
+}
