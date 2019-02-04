@@ -40,5 +40,21 @@ query MusicQuery {
       }
     }
   }
+
+  sptImg: file(relativePath: { eq: "images/SPT.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 700) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  movesJohnsonImg: file(relativePath: { eq: "images/movesJohnson.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 700) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
 }
 `;

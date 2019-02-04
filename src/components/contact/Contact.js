@@ -68,6 +68,7 @@ export class Contact extends Component {
       <div>
         <PageHeader title={`${localeData.headerText}`} classes="contactHeader" />
         <div className="contact">
+          <p>{localeData.content}</p>
           <form className="contactForm">
             <div className="contactFormInputBlock">
               <label htmlFor="name">{localeData.name}</label>
