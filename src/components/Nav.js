@@ -50,7 +50,7 @@ class Nav extends React.Component {
         <nav className={navClasses}>
           <div className="navContainer">
             <div className="navLogo">
-              <Link to={`/${locale}`}>Logo</Link>
+              <Link className="navLink" to={`/${locale}`}>Home</Link>
             </div>
             <div className="navLinks">
               <Link className="navLink" to={`/${locale}/music`}>
@@ -69,7 +69,7 @@ class Nav extends React.Component {
                 {localeData.nav.contact}
               </Link>
               <Link className="navLink" to={switchLocalePath}>
-                {this.props.locale === 'en' ? 'German' : 'English'}
+                {this.props.locale === 'en' ? 'Deutsch' : 'English'}
               </Link>
             </div>
           </div>

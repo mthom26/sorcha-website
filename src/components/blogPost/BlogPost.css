@@ -1,6 +1,6 @@
-.blogPost {
-  /* border: 1px solid orange; */
-}
+/* .blogPost {
+  border: 1px solid orange;
+} */
 
 .blogPostHeader {
   width: 100%;
@@ -9,9 +9,9 @@
   margin-bottom: 1rem;
 }
 
-.blogPostImage {
+/* .blogPostImage {
   
-}
+} */
 
 .blogPostContent {
   max-width: var(--max-width);

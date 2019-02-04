@@ -5,7 +5,7 @@ module.exports = {
     default: true,
     localeData: {
       nav: {
-        music: 'music',
+        music: 'bands',
         gigs: 'gigs',
         gallery: 'gallery',
         blog: 'blog',
@@ -78,11 +78,11 @@ module.exports = {
   },
   de: {
     path: 'de',
-    locale: 'German',
+    locale: 'Deutsch',
     default: false,
     localeData: {
       nav: {
-        music: 'music_g',
+        music: 'bands_g',
         gigs: 'gigs_g',
         gallery: 'gallery_g',
         blog: 'blog_g',
