@@ -38,6 +38,10 @@
   width: 10rem;
 }
 
+.musicContent h2 {
+  margin: 0;
+}
+
 /* ------------- */
 /* Media Queries */
 /* ------------- */
