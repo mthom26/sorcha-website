@@ -83,16 +83,16 @@ module.exports = {
     localeData: {
       nav: {
         music: 'bands',
-        gigs: 'gigs',
-        gallery: 'gallery',
+        gigs: 'konzerts',
+        gallery: 'galerie',
         blog: 'blog',
-        contact: 'contact'
+        contact: 'kontact'
       },
       landing: {
         content: 'Sorcha Thompson is a violinist living in Berlin. Although she grew up learning classical repertoire and playing in orchestras, her interests have since extended to genres as diverse as Irish folk and synth pop. She is active in several bands demonstrating the versatility of the violin as both melodic and rhythm instrument, as synthesiser and fiddle. No matter the musical context, Sorcha combines genre-specific techniques with her own musical ear to create an authentic, individual sound, whether on stage or in the recording studio.'
       },
       bio: {
-        title: 'About',
+        title: 'Biografie',
         content: 'Sorcha Thompson is a violinist living in Berlin. Although she grew up learning classical repertoire and playing in orchestras, her interests have since extended to genres as diverse as Irish folk and synth pop. She is active in several bands demonstrating the versatility of the violin as both melodic and rhythm instrument, as synthesiser and fiddle. No matter the musical context, Sorcha combines genre-specific techniques with her own musical ear to create an authentic, individual sound, whether on stage or in the recording studio.'
       },
       music: {
@@ -119,37 +119,37 @@ module.exports = {
         }
       },
       gigs: {
-        headerText: 'Gigs',
+        headerText: 'Konzerts',
         months: {
-          jan: 'January',
-          feb: 'February',
-          mar: 'March',
+          jan: 'Januar',
+          feb: 'Februar',
+          mar: 'März',
           apr: 'April',
-          may: 'May',
-          jun: 'June',
-          jul: 'July',
+          may: 'Mai',
+          jun: 'Juni',
+          jul: 'Juli',
           aug: 'August',
           sep: 'September',
-          oct: 'October',
+          oct: 'Oktober',
           nov: 'November',
-          dec: 'December'
+          dec: 'Dezember'
         }
       },
       upcomingGigs: {
-        title: 'Upcoming Gigs'
+        title: 'Kommende Konzerte'
       },
       gallery: {
-        headerText: 'Gallery'
+        headerText: 'Galerie'
       },
       blog: {
         headerText: 'Blog'
       },
       contact: {
-        headerText: 'Contact',
+        headerText: 'Kontact',
         content: 'If you would like to book a show, schedule a recording session or otherwise make contact, use the form below to send a message.',
         name: 'Name',
         email: 'Email',
-        message: 'Message'
+        message: 'Nachricht'
       }
     }
   }
