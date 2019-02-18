@@ -25,7 +25,7 @@ export default GigsPage;
 
 export const query = graphql`
 {
-  allContentfulGig (filter: { node_locale: { eq: "en-US"}}, sort: { fields: [date], order: DESC}) {
+  allContentfulGig (filter: { node_locale: { eq: "en-US"}}, sort: { fields: [date], order: ASC }) {
     edges {
       node {
         date(formatString: "DD-MM-YYYY, h:mma")

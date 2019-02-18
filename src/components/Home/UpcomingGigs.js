@@ -17,7 +17,7 @@ const UpcomingGigs = ({ gigs, localeData }) => {
       <h2>{localeData.title}</h2>
       <hr />
       {gigsToRender.length > 0
-        ? gigsToRender.map(({ node }) => (
+        ? gigsToRender.reverse().map(({ node }) => (
           <div key={node.date} className="gigEntry">
             <span>{formatDate(node.date)}</span> <span>{node.address}</span>
           </div>
