@@ -31,6 +31,14 @@ const Footer = () => {
               Michael Thompson
             </a>
           </div>
+          <div className="footerText footerTextSmall">Main Photo by <a
+            href="https://www.facebook.com/felixlprojects/"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+              Felix Limmer
+            </a>
+          </div>
         </div>
       </div>
     </div>
