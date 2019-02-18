@@ -3,6 +3,7 @@ import React from 'react';
 import { formatDate } from '../../utils';
 
 import './UpcomingGigs.css';
+import '../gigs/GigEntry.css';
 
 const UpcomingGigs = ({ gigs, localeData }) => {
   const gigsToRender = gigs.filter(({ node }) => {
