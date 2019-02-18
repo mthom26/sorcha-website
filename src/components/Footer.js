@@ -23,7 +23,9 @@ const Footer = () => {
             <a href="#"><img src={youtube} width="24px" alt="" /></a>
           </div>
           <div className="footerText">&copy; 2018 Sorcha Thompson</div>
-          <div className="footerText footerTextSmall">Website created by <a
+        </div>
+        <div className="footerCredits">
+          <div className="footerCreditsText footerTextSmall">Website created by <a
             href="https://www.michaelthompson.me/"
             rel="nofollow noopener noreferrer"
             target="_blank"
@@ -31,7 +33,7 @@ const Footer = () => {
               Michael Thompson
             </a>
           </div>
-          <div className="footerText footerTextSmall">Main Photo by <a
+          <div className="footerCreditsText footerTextSmall">Main Photo by <a
             href="https://www.facebook.com/felixlprojects/"
             rel="nofollow noopener noreferrer"
             target="_blank"
