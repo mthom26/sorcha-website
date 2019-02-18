@@ -11,7 +11,7 @@ const Layout = ({ children, locale, localeData }) => {
     <Fragment>
       <Nav localeData={localeData} locale={locale} />
       {children}
-      <Footer />
+      <Footer locale={locale} />
     </Fragment>
   );
 };

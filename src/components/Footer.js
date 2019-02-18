@@ -1,10 +1,14 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import './Footer.css';
 import facebook from '../images/facebook-square.svg';
 import youtube from '../images/youtube-square.svg';
+import { getPathPrefix } from '../utils';
 
-const Footer = () => {
+const Footer = ({ locale }) => {
+  const localePrefix = getPathPrefix(locale);
+
   return (
     <div className="footer">
       <div className="footerContainer">
@@ -23,6 +27,12 @@ const Footer = () => {
             <a href="#"><img src={youtube} width="24px" alt="" /></a>
           </div>
           <div className="footerText">&copy; 2018 Sorcha Thompson</div>
+          <Link
+            className="footerText"
+            to={`/${localePrefix}/impressum`}
+          >
+            Impressum
+          </Link>
         </div>
         <div className="footerCredits">
           <div className="footerCreditsText footerTextSmall">Website created by <a
