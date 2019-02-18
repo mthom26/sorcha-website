@@ -107,7 +107,7 @@ export class Contact extends Component {
               onClick={this.onSubmit}
               className="contactFormButton"
             >
-              <span style={{ margin: '0 1rem' }}>Send Message</span>
+              <span style={{ margin: '0 1rem' }}>{localeData.buttonText}</span>
               {loading && (
                 <img
                   src={spinner}

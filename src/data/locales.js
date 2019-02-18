@@ -16,7 +16,7 @@ module.exports = {
       },
       bio: {
         title: 'About',
-        content: 'Sorcha Thompson is a violinist living in Berlin. Although she grew up learning classical repertoire and playing in orchestras, her interests have since extended to genres as diverse as Irish folk and synth pop. She is active in several bands demonstrating the versatility of the violin as both melodic and rhythm instrument, as synthesiser and fiddle. No matter the musical context, Sorcha combines genre-specific techniques with her own musical ear to create an authentic, individual sound, whether on stage or in the recording studio.'
+        content: 'Sorcha is a violinist living in Berlin. Although she grew up learning classical repertoire and playing in orchestras, her interests have since extended to genres as diverse as Irish folk and synth pop. She is active in several bands demonstrating the versatility of the violin as both melodic and rhythm instrument, as synthesiser and fiddle. No matter the musical context, Sorcha combines genre-specific techniques with her own musical ear to create an authentic, individual sound, whether on stage or in the recording studio.'
       },
       music: {
         headerText: 'Bands',
@@ -72,7 +72,8 @@ module.exports = {
         content: 'If you would like to book a show, schedule a recording session or otherwise make contact, use the form below to send a message.',
         name: 'Name',
         email: 'Email',
-        message: 'Message'
+        message: 'Message',
+        buttonText: 'Send Message'
       }
     }
   },
@@ -83,17 +84,17 @@ module.exports = {
     localeData: {
       nav: {
         music: 'bands',
-        gigs: 'konzerts',
+        gigs: 'konzerte',
         gallery: 'galerie',
         blog: 'blog',
-        contact: 'kontact'
+        contact: 'kontakt'
       },
       landing: {
         content: 'Violinistin, Live Musik, Studioaufnahmen'
       },
       bio: {
         title: 'Biografie',
-        content: 'Sorcha ist eine professionelle Violistin mit Schaffensmittelpunkt in Berlin. Ihre Wurzeln liegen in der Klassik und im klassischen Orchester, was sie bis heute prägt. In den vergangenen Jahren hat sie ihr musikalisches Spektrum erweitert und bedient inzwischen unterschiedlichste Stilrichtungen von Irish Folk bis Synth Pop. Aktuell ist sie in mehreren Bands tätig, in denen sie ihre Geige vielseitig zum Einsatz bringt. Sei es als Solistin oder Begleitinstrument, als Fiddle im Irish Ensemble oder Synthesizerfläche mit der E-Geige. Sorcha verbindet genrespezifische Spieltechniken mit eigener, musikalischer Intuition, um, egal ob auf der Bühne oder im Aufnahmestudio, stets einen individuellen, authentischen Sound zu schaffen.'
+        content: 'Sorcha ist eine professionelle Violinistin mit Schaffensmittelpunkt in Berlin. Ihre Wurzeln liegen in der Klassik und im klassischen Orchester, was sie bis heute prägt. In den vergangenen Jahren hat sie ihr musikalisches Spektrum erweitert und bedient inzwischen unterschiedlichste Stilrichtungen von Irish Folk bis Synth Pop. Aktuell ist sie in mehreren Bands tätig, in denen sie ihre Geige vielseitig zum Einsatz bringt. Sei es als Solistin oder Begleitinstrument, als Fiddle im Irish Ensemble oder Synthesizerfläche mit der E-Geige. Sorcha verbindet genrespezifische Spieltechniken mit eigener, musikalischer Intuition, um, egal ob auf der Bühne oder im Aufnahmestudio, stets einen individuellen, authentischen Sound zu schaffen.'
       },
       music: {
         headerText: 'Bands',
@@ -119,7 +120,7 @@ module.exports = {
         }
       },
       gigs: {
-        headerText: 'Konzerts',
+        headerText: 'Konzerte',
         months: {
           jan: 'Januar',
           feb: 'Februar',
@@ -149,7 +150,8 @@ module.exports = {
         content: 'Anfragen und Buchungen für Live-Musik oder Recording nehme ich gern über das untenstehende Kontaktformular entgegen.',
         name: 'Name',
         email: 'Email',
-        message: 'Nachricht'
+        message: 'Nachricht',
+        buttonText: 'Nachricht Senden'
       }
     }
   }
