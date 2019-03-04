@@ -42,9 +42,13 @@
   justify-content: center;
 }
 
-.footerIcons a:nth-child(1) {
+.footerIcons a {
   margin-right: 1rem;
   /* border: 1px solid orange; */
+}
+
+.footerIcons a:last-child {
+  margin-right: 0;
 }
 
 .footerText {

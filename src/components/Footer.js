@@ -4,6 +4,8 @@ import { Link } from 'gatsby';
 import './Footer.css';
 import facebook from '../images/facebook-square.svg';
 import youtube from '../images/youtube-square.svg';
+import instagram from '../images/instagram-logo.png';
+
 import { getPathPrefix } from '../utils';
 
 const Footer = ({ locale }) => {
@@ -25,6 +27,9 @@ const Footer = ({ locale }) => {
           <div className="footerIcons">
             <a href="#"><img src={facebook} width="24px" alt="" /></a>
             <a href="#"><img src={youtube} width="24px" alt="" /></a>
+            <a href="https://www.instagram.com/scorchviolinist/">
+              <img src={instagram} width="24px" alt="" />
+            </a>
           </div>
           <div className="footerText">&copy; 2018 Sorcha Thompson</div>
           <Link
