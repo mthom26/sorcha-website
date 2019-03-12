@@ -57,5 +57,21 @@ export const query = graphql`
       }
     }
 
+    gallery5: file(relativePath: { eq: "images/gallery5.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    gallery6: file(relativePath: { eq: "images/gallery6.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
   }
 `;
