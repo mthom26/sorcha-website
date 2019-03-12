@@ -25,9 +25,13 @@ const Footer = ({ locale }) => {
         </div>
         <div className="footerContent">
           <div className="footerIcons">
-            <a href="#"><img src={facebook} width="24px" alt="" /></a>
-            <a href="#"><img src={youtube} width="24px" alt="" /></a>
-            <a href="https://www.instagram.com/scorchviolinist/">
+            <a href="https://www.facebook.com/Sorcha-Thompson-Violinist-254900392062477/" target="_blank" rel="nofollow noopener noreferrer">
+              <img src={facebook} width="24px" alt="" />
+            </a>
+            <a href="https://www.youtube.com/channel/UCfntLe4jDr-Pa1zOGa3c28Q/featured" target="_blank" rel="nofollow noopener noreferrer">
+              <img src={youtube} width="24px" alt="" />
+            </a>
+            <a href="https://www.instagram.com/scorchviolinist/" target="_blank" rel="nofollow noopener noreferrer">
               <img src={instagram} width="24px" alt="" />
             </a>
           </div>
