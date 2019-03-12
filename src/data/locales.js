@@ -32,12 +32,12 @@ module.exports = {
         },
         synthPopTroubadours: {
           title: 'Synth Pop Troubadours',
-          content: "Art Trash meets New Wave. Synth Pop Troubadours are the crazy, glittery musicians who have formed a band with keyboarder and songwriter Stephen Paul Taylor. Their shows combine playful synth beats and pop hooks with fabulous costumes, an experience that you're not likely to forget in a hurry.",
+          content: "Art Trash meets New Wave. Synth Pop Troubadours are the glittery musicians who have formed a band with Berlin viral sensation Stephen Paul Taylor.A fourpiece of bass, drums, violin and keyboard, their shows combine playful synth beats and pop hooks with fabulous costumes, an experience that you're not likely to forget in a hurry.",
           link: 'https://stephenpaultaylor.net/'
         },
         movesJohnson: {
           title: 'Moves Johnson',
-          content: "Born in Canada, Moves currently lives in Berlin, Germany. He is best known for his resonant and often humorous lyrics, his aggressive performance style and his witty stage banter. A performer to the core, Moves is a musician on both the streets and the stage. Whether it's a crowded subway station, a bustling city street or a dimly lit and smokey bar, Moves finds the music to fit any occasion.",
+          content: `Moves Johnson is a Canadian-born musician currently living in Berlin. Known for his witty lyrics, eccentric stage persona and passionate storytelling, his music spans many genres and styles. From blues and rock to hip-hop and electronic, Moves does a little bit of everything. His current project, Moves Johnson and the Boxhoppers, brings a patented air of calculated drunken chaos to the stage. Featuring musicians from around the world, Moves Johnson and the Boxhoppers deliver the self-styled "Modern Man's Blues" to audiences. You'll laugh, you'll cry, you'll love it.`,
           link: 'https://www.facebook.com/MovesJohnsonMusic/'
         }
       },
@@ -110,12 +110,12 @@ module.exports = {
         },
         synthPopTroubadours: {
           title: 'Synth Pop Troubadours',
-          content: "Art Trash trifft New Wave. Synth Pop Troubadours sind die verrückten und glitzernden MusikerInnen, die sich als Band um Stephen Paul Taylor zusammen getan haben. Ihre Musik steht für verspielte Synth Beats, poppige Melodien und eine Live-Show, die du nicht so schnell vergessen wirst.",
+          content: "Art Trash trifft New Wave. Synth Pop Troubadours sind die glitzernden MusikerInnen, die sich mit Berlin's Viral-Sensation Stephen Paul Taylor als Band zusammen getan haben. Eine 4-köpfige Band bestehend aus Schlagzeug, Bass, Geige und Keyboard, ihre Musik steht für verspielte Synth Beats, poppige Melodien und eine Live-Show, die du nicht so schnell vergessen wirst.",
           link: 'https://stephenpaultaylor.net/'
         },
         movesJohnson: {
           title: 'Moves Johnson',
-          content: "Moves is gebürtiger Kanadier. Derzeit lebt und arbeitet er in Berlin. Seine Shows spielen mit humorvollen Texten, seiner einnehmenden Bühnenpräsenz, markigen Sprüchen und Anekdoten. Moves lebt für die Performance. Sei es als Musiker auf der Straße, in überfüllten U- Bahnstationen oder in gemütlichen Kneipen. Er findet den richtigen Ton für jede Bühne dieser Stadt.",
+          content: "Moves ist gebürtiger Kanadier. Derzeit lebt und arbeitet er in Berlin. Seine Shows spielen mit humorvollen Texten, seiner einnehmenden Bühnenpräsenz, markigen Sprüchen und Anekdoten. Seine Musik ist geprägt von Einflüssen aus Blues und Rock bis hin zum Hip-hop und Electronic. Sein aktuelles Projekt „Moves Johnson And The Boxhoppers“ besteht aus einer Gruppe internationaler Musiker, mit denen er handgemachten „Modern Man's Blues“, mit einem Hauch kalkuliertem Chaos auf die Bühne bringt. Du wirst weinen. Du wirst lachen und du wirst es lieben!",
           link: 'https://www.facebook.com/MovesJohnsonMusic/'
         }
       },

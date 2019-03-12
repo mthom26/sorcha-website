@@ -49,7 +49,7 @@ query MusicQuery {
     }
   }
 
-  movesJohnsonImg: file(relativePath: { eq: "images/movesJohnson.jpg"}) {
+  movesJohnsonImg: file(relativePath: { eq: "images/movesJohnsonBio.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 700) {
         ...GatsbyImageSharpFluid
