@@ -23,39 +23,9 @@ const GalleryPage = ({ data, pageContext }) => {
 
 export default GalleryPage;
 
+// query looks out of order to re order the gallery pictures
 export const query = graphql`
   query GalleryQuery {
-    gallery1: file(relativePath: { eq: "images/gallery1.jpg"}) {
-      childImageSharp {
-        fluid(maxWidth: 1600) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-
-    gallery2: file(relativePath: { eq: "images/gallery2.jpg"}) {
-      childImageSharp {
-        fluid(maxWidth: 1600) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-
-    gallery3: file(relativePath: { eq: "images/gallery3.jpg"}) {
-      childImageSharp {
-        fluid(maxWidth: 1600) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-
-    gallery4: file(relativePath: { eq: "images/gallery4.jpg"}) {
-      childImageSharp {
-        fluid(maxWidth: 1600) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
 
     gallery5: file(relativePath: { eq: "images/gallery5.jpg"}) {
       childImageSharp {
@@ -64,8 +34,16 @@ export const query = graphql`
         }
       }
     }
-
+    
     gallery6: file(relativePath: { eq: "images/gallery6.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    gallery4: file(relativePath: { eq: "images/gallery4.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 1600) {
           ...GatsbyImageSharpFluid
