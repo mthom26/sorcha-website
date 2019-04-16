@@ -1,12 +1,5 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site.
+# Sorcha Thompson
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
-```
+A bi-lingual website built with [GatsbyJS](https://www.gatsbyjs.org/). It uses [Contentful](https://www.contentful.com/) as a CMS.
 
-Or [view the live demo here](https://gatsby-starter-hello-world-demo.netlify.com/).
-
-## Running in development
-`gatsby develop`
+The live site can be viewed [here](https://www.sorchathompson.com/).
