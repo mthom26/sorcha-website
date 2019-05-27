@@ -13,7 +13,7 @@ class Gallery extends React.Component {
     this.state = {
       modalOpen: false,
       modalIndex: 0,
-      maxIndex: 3
+      maxIndex: 2
     };
 
     this.openModal = this.openModal.bind(this);
