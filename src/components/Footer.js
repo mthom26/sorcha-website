@@ -35,7 +35,7 @@ const Footer = ({ locale }) => {
               <img src={instagram} width="24px" alt="" />
             </a>
           </div>
-          <div className="footerText">&copy; 2018 Sorcha Thompson</div>
+          <div className="footerText">&copy; 2020 Sorcha Thompson</div>
           <Link
             className="footerText"
             to={`/${localePrefix}/impressum`}
