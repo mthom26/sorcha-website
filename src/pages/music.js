@@ -56,5 +56,13 @@ query MusicQuery {
       }
     }
   }
+
+  samhuinnImg: file(relativePath: { eq: "images/samhuinn.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 700) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
 }
 `;

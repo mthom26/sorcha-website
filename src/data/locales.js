@@ -39,6 +39,11 @@ module.exports = {
           title: 'Moves Johnson',
           content: `Moves Johnson is a Canadian-born musician currently living in Berlin. Known for his witty lyrics, eccentric stage persona and passionate storytelling, his music spans many genres and styles. From blues and rock to hip-hop and electronic, Moves does a little bit of everything. His current project, Moves Johnson and the Boxhoppers, brings a patented air of calculated drunken chaos to the stage. Featuring musicians from around the world, Moves Johnson and the Boxhoppers deliver the self-styled "Modern Man's Blues" to audiences. You'll laugh, you'll cry, you'll love it.`,
           link: 'https://www.facebook.com/MovesJohnsonMusic/'
+        },
+        samhuinn: {
+          title: 'Sorcha and Samhuinn',
+          content: `Irish fiddler Sorcha Thompson and Scottish bodhrán player and singer Samhuinn Watt, both based in Berlin, combine to play a sprightly mix of traditional pieces and original works.`,
+          link: 'https://www.facebook.com/sorchaandsamhuinn'
         }
       },
       gigs: {
@@ -117,6 +122,11 @@ module.exports = {
           title: 'Moves Johnson',
           content: "Moves ist gebürtiger Kanadier. Derzeit lebt und arbeitet er in Berlin. Seine Shows spielen mit humorvollen Texten, seiner einnehmenden Bühnenpräsenz, markigen Sprüchen und Anekdoten. Seine Musik ist geprägt von Einflüssen aus Blues und Rock bis hin zum Hip-hop und Electronic. Sein aktuelles Projekt „Moves Johnson And The Boxhoppers“ besteht aus einer Gruppe internationaler Musiker, mit denen er handgemachten „Modern Man's Blues“, mit einem Hauch kalkuliertem Chaos auf die Bühne bringt. Du wirst weinen. Du wirst lachen und du wirst es lieben!",
           link: 'https://www.facebook.com/MovesJohnsonMusic/'
+        },
+        samhuinn: {
+          title: 'Sorcha and Samhuinn',
+          content: `Die irische Geigerin Sorcha Thompson und der schottische Bodhrán-Spieler und Sänger Samhuinn Watt, die beide in Berlin wohnen und arbeiten, spielen zusammen eine lebendige Mischung aus traditionellen und originalen Stücken`,
+          link: 'https://www.facebook.com/sorchaandsamhuinn'
         }
       },
       gigs: {

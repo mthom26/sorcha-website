@@ -5,8 +5,8 @@ import './Music.css';
 import PageHeader from '../PageHeader';
 
 const Music = ({ data, localeData }) => {
-  console.log(data);
-  const { larkinImg, vioLarkinImg, sptImg, movesJohnsonImg } = data;
+  // console.log(data);
+  const { larkinImg, movesJohnsonImg, samhuinnImg } = data;
 
   return (
     <div>
@@ -29,26 +29,13 @@ const Music = ({ data, localeData }) => {
         <div className="musicBand">
           <Img
             className="musicImage"
-            fluid={vioLarkinImg.childImageSharp.fluid}
+            fluid={samhuinnImg.childImageSharp.fluid}
           />
           <div className="musicContent">
-            <h2>{localeData.vioLarkin.title}</h2>
+            <h2>{localeData.samhuinn.title}</h2>
             <hr />
-            <p>{localeData.vioLarkin.content}</p>
-            <a href={localeData.vioLarkin.link}>{localeData.vioLarkin.link}</a>
-          </div>
-        </div>
-
-        <div className="musicBand">
-          <Img
-            className="musicImage"
-            fluid={sptImg.childImageSharp.fluid}
-          />
-          <div className="musicContent">
-            <h2>{localeData.synthPopTroubadours.title}</h2>
-            <hr />
-            <p>{localeData.synthPopTroubadours.content}</p>
-            <a href={localeData.synthPopTroubadours.link}>{localeData.synthPopTroubadours.link}</a>
+            <p>{localeData.samhuinn.content}</p>
+            <a href={localeData.samhuinn.link}>{localeData.samhuinn.link}</a>
           </div>
         </div>
 
