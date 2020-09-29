@@ -5,6 +5,7 @@ import './Footer.css';
 import facebook from '../images/facebook-square.svg';
 import youtube from '../images/youtube-square.svg';
 import instagram from '../images/instagram-logo.png';
+import soundcloud from '../images/soundcloud.png';
 
 import { getPathPrefix } from '../utils';
 
@@ -33,6 +34,9 @@ const Footer = ({ locale }) => {
             </a>
             <a href="https://www.instagram.com/scorchviolinist/" target="_blank" rel="nofollow noopener noreferrer">
               <img src={instagram} width="24px" alt="" />
+            </a>
+            <a href="https://soundcloud.com/scorchviolinist" target="_blank" rel="nofollow noopener noreferrer">
+              <img src={soundcloud} width="24px" alt="" />
             </a>
           </div>
           <div className="footerText">&copy; 2020 Sorcha Thompson</div>
