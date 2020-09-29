@@ -27,15 +27,7 @@ export default GalleryPage;
 export const query = graphql`
   query GalleryQuery {
 
-    gallery5: file(relativePath: { eq: "images/gallery5.jpg"}) {
-      childImageSharp {
-        fluid(maxWidth: 1600) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    
-    gallery6: file(relativePath: { eq: "images/gallery6.jpg"}) {
+    top_left: file(relativePath: { eq: "images/gallery_top_left.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 1600) {
           ...GatsbyImageSharpFluid
@@ -43,7 +35,15 @@ export const query = graphql`
       }
     }
 
-    gallery4: file(relativePath: { eq: "images/gallery4.jpg"}) {
+    gallery5: file(relativePath: { eq: "images/gallery5.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 1600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    top_right: file(relativePath: { eq: "images/gallery_top_right.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 1600) {
           ...GatsbyImageSharpFluid
