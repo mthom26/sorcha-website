@@ -39,7 +39,7 @@ const Footer = ({ locale }) => {
               <img src={soundcloud} width="24px" alt="" />
             </a>
           </div>
-          <div className="footerText">&copy; 2020 Sorcha Thompson</div>
+          <div className="footerText">&copy; 2021 Sorcha Thompson</div>
           <Link
             className="footerText"
             to={`/${localePrefix}/impressum`}

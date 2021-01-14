@@ -8,7 +8,7 @@ module.exports = {
         music: 'bands',
         gigs: 'gigs',
         gallery: 'gallery',
-        blog: 'blog',
+        blog: 'music',
         contact: 'contact'
       },
       landing: {
@@ -75,7 +75,7 @@ module.exports = {
         headerText: 'Gallery'
       },
       blog: {
-        headerText: 'Blog'
+        headerText: 'Music'
       },
       contact: {
         headerText: 'Contact',
@@ -96,7 +96,7 @@ module.exports = {
         music: 'bands',
         gigs: 'konzerte',
         gallery: 'galerie',
-        blog: 'blog',
+        blog: 'musik',
         contact: 'kontakt'
       },
       landing: {
@@ -163,7 +163,7 @@ module.exports = {
         headerText: 'Galerie'
       },
       blog: {
-        headerText: 'Blog'
+        headerText: 'Musik'
       },
       contact: {
         headerText: 'Kontakt',
