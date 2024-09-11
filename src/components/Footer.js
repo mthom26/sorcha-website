@@ -48,14 +48,7 @@ const Footer = ({ locale }) => {
           </Link>
         </div>
         <div className="footerCredits">
-          <div className="footerCreditsText footerTextSmall">Website created by <a
-            href="https://www.michaelthompson.me/"
-            rel="nofollow noopener noreferrer"
-            target="_blank"
-          >
-              Michael Thompson
-            </a>
-          </div>
+          
           <div className="footerCreditsText footerTextSmall">Main Photo by <a
             href="https://www.facebook.com/felixlprojects/"
             rel="nofollow noopener noreferrer"
